@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>Service Portal</category>
+        <format>png</format>
+        <height>48</height>
+        <image/>
+        <name>icon-data-thin.png</name>
+        <size_bytes>1269</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-14 06:57:19</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c72b9cdadb7013006c8e5ec0cf961956</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>icon-data-thin.png</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>db_image_c72b9cdadb7013006c8e5ec0cf961956</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-14 06:57:25</sys_updated_on>
+        <thumbnail/>
+        <width>48</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <image_height>48</image_height>
+        <image_width>48</image_width>
+        <size_bytes>1269</size_bytes>
+        <size_compressed>1292</size_compressed>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-14 06:57:25</sys_created_on>
+        <sys_domain>774190f01f1310005a3637b8ec8b70ef</sys_domain>
+        <sys_domain_path>!!!/</sys_domain_path>
+        <sys_id>1b3b9c5edb7013006c8e5ec0cf9619fe</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-14 06:57:25</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>c72b9cdadb7013006c8e5ec0cf961956</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="1b3b9c5edb7013006c8e5ec0cf9619fe">1b3b9c5edb7013006c8e5ec0cf9619fe</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-14 06:57:25</sys_created_on>
+        <sys_id>5b3b9c5edb7013006c8e5ec0cf9619fe</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>AfUECvuJUE5HDQoaCgAAAA1JSERSAAAAMAAAADAIBgAAAFcC+YcAAAAEZ0FNQQAAsY8L/GEFAAAErElEQVRoBdWZWWwNURjHXUst1RAPtKpImkhaSyLiQVCRNMpTqQQPllQsD8KbePBAEBIkYkmk8WJraksktSQ8kPCAhhCNJRTVaGvft7Slfv/pnLq9nTvunTvXnf6T3z1nzvKd75tz58zMmVC3/6DW1tZ1DLMFXkKDzQvSy3AhFAp9Iw2uFABItfDFyv39+UG2EkqhdyCjwDETQJEc5DgTpsBauA1Gz8kshFCgAsGhDgFEOkd9HmwFMzsKqiCyXcqOccY1AOMY7bLgMPyGFlhj6qKlPaNVxFLOAL1oNw3yYChk22ktF+Yy8nGJPo10WIzd/aQVsJv8GNJV1DWTJi4M9oUSOAofwUnXwkeiQUwzENFH18lN2/hFUp0s78JAd9BKUQ9Gd8hsgPkwHjLgNSQcgDzFTjqcAanMs/d0LgQ5K8nBbTDayaBd70sAdhBp2LwG0iqnMV3L6LTR6tp2Ue0hP9CtA/W+zYAZB5vZ8BKaYbIpd01p2AcqQLoF41w72JW08z0AmcZuAWhl0nXRfp/o7uQUDdIp121+AZyHAlaBu6QpE+NfYfBDMAHmRXVE0cEpkA5AXEst7ZMyA3IY28PhJ9SAtSo5zcB62s6Fk0S9HFrUOQjClzr80GqUC/PlU4cAiGomZZvgISyFIGqX7VSJ0vYAcF5/ld3wHUqI9itp4IRftThVDTPwuU97ABTojI+CHTR6QBpkncE5LTSFVgBE0peDDfAezBSRDazO2p61BcDBEtDD2HbO/me7MsjJfdu5HPMXmk1BE+gpMPDiJH/CyR8wVA9oGWSmw5UucvZx1VIjv1magSJIg3PQlfQKZ7O0dOrsS/8jgJ3MuG6UfigfI9baP4zML3jih9V/2NDblZ96o+eLKtBejS/CVqdnIV8MRzGiayALdEF0SSmAwfCmS3qP07qIP4LrW5aH4PR+XOuhX7QuNSzxhU6VCsBaT50qPZZpMRjksa9TNz2fPXaqUJkC0AWczxkjyFCrChMRNiYl0j+8Lz4N4VgbwlEfLnUNaAb0dpMJQdNE2yHz7NPJPwVw3S6d0ak29QUmgKgzoPuA9iO1F3kq9f529ACfLsE36N+xJuKIBjdAO8O9I6pSdogvuaATW+7mhP5CUiUoyjk6CIhW4If2f4780x+iHAJf4RFoZUqp8EGbanokaYQeMTlDwy0grYypQxIb4YM+dkix74XSeAC8A+0+D0iif66mGXssNIE2k2M7+8YiHVaDdA7M9WGqk54yZi+4DtJUTwPS8bjVnWn0ZMBjJ8bUlma5PfYej2as/cd+GDHfAko9G4qzI2Pqc5KkDxrx/XUix8LASNB+vLQZtJwlRdjW32YvSNo614ZV4sLQCKgG6QRo88tXYTMHzNeXq+T1buKfMJgBuqClOvDlIzR2dNZXwFuQ9kFiH/GihY3hHrAe9KghaZpnQdw3PPUBfSh8CpKWbe0KJl8MpLt1Gegzj6TBD0IxDAbH64RyfS5dBMfgA0i66+vGmfD9xnFQt9PBoPqordWpBHLD2jaT17tFPWgV0fuFSAOje2ROwz5efLQxlbDiDiB8RIIZy3ExKKjwL/XaZ1IwDXZaRVqJ089IfdUfAjIdm132/YYAAAAASUVORK5CYIJtq80o9QQAAA==</data>
+        <length>1712</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="1b3b9c5edb7013006c8e5ec0cf9619fe">1b3b9c5edb7013006c8e5ec0cf9619fe</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-14 06:57:25</sys_created_on>
+        <sys_id>db3b9c5edb7013006c8e5ec0cf9619fe</sys_id>
+    </sys_attachment_doc>
+</record_update>

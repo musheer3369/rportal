@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rsp-portal-footer</id>
+        <internal>false</internal>
+        <link/>
+        <name>RSP Footer</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-14 04:05:24</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>dbd3f74adb3013006c8e5ec0cf96191b</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>RSP Footer</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_header_footer_dbd3f74adb3013006c8e5ec0cf96191b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-17 02:37:37</sys_updated_on>
+        <template><![CDATA[<div class="container-fluid border">
+  <div class="row footer-area">
+
+    <div class="col-md-12">
+      <div class="footer-left">      
+        Ricoh Footer
+      </div>
+
+      <div class="footer-right">
+
+      </div>
+    </div>
+
+  </div>
+</div>]]></template>
+    </sp_header_footer>
+</record_update>

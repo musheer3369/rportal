@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>ricoh-nav-template</id>
+        <sp_widget display_value="RSP Header">c4f17f02db3013006c8e5ec0cf96199a</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-16 05:27:35</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7bb91a3edb3013006c8e5ec0cf9619cc</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>ricoh-nav-template</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_ng_template_7bb91a3edb3013006c8e5ec0cf9619cc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-16 05:31:45</sys_updated_on>
+        <template><![CDATA[<a ng-if="item.items.length == 0" ng-href="{{item.href}}">{{ item.label }}</a>
+<a ng-if="item.items.length > 0" href="javascript:void(0)" class="dropdown-toggle" 
+   data-toggle="dropdown" role="button" aria-expanded="false">{{ item.label }} <span class="caret"></span></a>
+
+   
+
+    <ul ng-if="item.items.length > 0" class="dropdown-menu" role="menu">
+      <li ng-repeat="item in item.items">  
+        <a ng-href="{{item.href}}">{{ item.label }}</a>
+      </li>
+	</ul>]]></template>
+    </sp_ng_template>
+</record_update>

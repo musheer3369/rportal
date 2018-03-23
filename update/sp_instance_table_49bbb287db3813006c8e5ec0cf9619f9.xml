@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>number</display_field>
+        <field_list>number,opened_by,caller_id,company,state,short_description,contact_type,sys_updated_on,opened_at</field_list>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <roles/>
+        <short_description>My Incidents</short_description>
+        <size>md</size>
+        <sp_column display_value="2">4a0b3a47db3813006c8e5ec0cf9619d1</sp_column>
+        <sp_page/>
+        <sp_widget display_value="RSP Data Table from Instance">f287ffcadb3013006c8e5ec0cf961978</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-17 02:33:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>49bbb287db3813006c8e5ec0cf9619f9</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>My Incidents</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_instance_table_49bbb287db3813006c8e5ec0cf9619f9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-18 03:08:24</sys_updated_on>
+        <table>incident</table>
+        <title>My Incidents</title>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+    <sys_translated_text action="delete_multiple" query="documentkey=49bbb287db3813006c8e5ec0cf9619f9"/>
+</record_update>

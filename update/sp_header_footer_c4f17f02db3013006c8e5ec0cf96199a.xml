@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_header_footer">
+    <sp_header_footer action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;		
+  
+	
+
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.navbar-toggle.pull-left {&#13;
+  margin-left: 15px;&#13;
+}&#13;
+@media (min-width: 768px) {&#13;
+  .pull-sm-left {&#13;
+    float: left !important;&#13;
+  }&#13;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rsp-portal-header</id>
+        <internal>false</internal>
+        <link/>
+        <name>RSP Header</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */		
+	
+	var menu = $sp.getValue('sp_rectangle_menu');
+		/*if(data.menu && data.menu.data){
+			data.menu.data.replace=true;
+			data.hasLogin = false;
+			if (data.menu.data.menu.items) {
+			for(var i in data.menu.data.menu.items) {
+				var item = data.menu.data.menu.items[i];
+				if (item.type == 'page' && item.sp_page == data.login_page)
+					data.hasLogin = true;
+				}
+			}
+		}*/
+	
+	var gr = new GlideRecord('sp_instance_menu');			
+		gr.get(menu);
+		data.menu ={};
+		data.menu.items = $sp.getMenuItems(menu);	
+		
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-03-14 03:56:59</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>c4f17f02db3013006c8e5ec0cf96199a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>RSP Header</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_header_footer_c4f17f02db3013006c8e5ec0cf96199a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-03-17 02:37:33</sys_updated_on>
+        <template><![CDATA[<div class="white-backdrop">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+        <a ng-class="{'header-brand-logo':portal.logo}"  href="?id={{portal.homepage_dv}}">
+                 <span ng-if="!portal.logo" class="inverse">{{portal.title}}</span>
+                    <img style="max-width:300px" class="img-responsive" alt="Responsive image"
+                         ng-if="portal.logo" ng-src="{{portal.logo}}"  />
+                 </a>  
+
+        </div>     
+    </div>
+  </div>
+  
+</div>
+<div class="navbar navbar-default" role="navigation">  
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!--Left Hamburger--> 
+      <button type="button" class="navbar-toggle collapsed pull-left"
+              data-toggle="collapse" data-target="#collapseLeft" aria-expanded="false">
+      		<span class="sr-only">Toggle navigation</span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+        	<span class="icon-bar"></span>
+      </button>
+      
+      <!--Right Hamburger-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseRight">
+            <span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    
+    </div>
+    <div class="collapse navbar-collapse" id="collapseRight">
+      <ul class="nav navbar-nav">
+    		  <li ng-repeat="item in data.menu.items" ng-class="{dropdown:item.items.length >0}" 
+                  ng-include="'ricoh-nav-template'" class="menu-link">      
+     		 </li>	
+  		</ul>
+      <ul class="nav navbar-nav navbar-right">
+         <li class="dropdown">
+           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             <span class="glyphicon glyphicon-user"></span>
+             <small>Logged in as</small> <strong>{{::user.name}}</strong>
+             <span class="glyphicon glyphicon-chevron-down"></span>
+           </a>
+           <ul class="dropdown-menu">
+             	
+            	<li><a href="#">Edit Contact Info 
+                 
+                  </a></li>            	
+            	<li><a href="#">Change Password</a></li>             	
+            	<li class="divider"></li>
+            	<li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+           </ul>
+        </li>
+      </ul>
+    </div>
+  
+  </div>
+    
+</div>
+
+]]></template>
+    </sp_header_footer>
+</record_update>
