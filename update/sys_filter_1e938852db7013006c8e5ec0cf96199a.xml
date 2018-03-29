@@ -17,7 +17,7 @@
         <sys_domain_path>!!!/</sys_domain_path>
         <sys_id>1e938852db7013006c8e5ec0cf96199a</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
+        <sys_name>mobile</sys_name>
         <sys_package/>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
@@ -27,6 +27,6 @@
         <sys_updated_on>2018-03-14 05:14:08</sys_updated_on>
         <table>sp_page</table>
         <title>mobile</title>
-        <user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</user>
+        <user display_value="System Administrator">3ab6703adb39ba406d7070e21f96199e</user>
     </sys_filter>
 </record_update>

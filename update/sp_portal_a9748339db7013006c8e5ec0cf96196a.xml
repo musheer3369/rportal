@@ -34,7 +34,6 @@
         <title>Ricoh Service Portal</title>
         <url_suffix>rsp</url_suffix>
     </sp_portal>
-    <sys_translated_text action="delete_multiple" query="documentkey=a9748339db7013006c8e5ec0cf96196a"/>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>
