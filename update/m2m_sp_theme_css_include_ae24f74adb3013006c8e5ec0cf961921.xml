@@ -7,7 +7,7 @@
         <sys_class_name>m2m_sp_theme_css_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 04:06:42</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>ae24f74adb3013006c8e5ec0cf961921</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>bootstrap-ricoh-custom.Ricoh Theme</sys_name>

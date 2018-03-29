@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-22 06:57:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a818a9f8db4113006c8e5ec0cf9619ec</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>sc_cat_item_category</sys_name>

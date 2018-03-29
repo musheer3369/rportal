@@ -25,7 +25,7 @@
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 11:55:38</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>716fdddadbf013006c8e5ec0cf96190e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>Data Now</sys_name>
@@ -42,4 +42,5 @@
         <url/>
         <url_target/>
     </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=716fdddadbf013006c8e5ec0cf96190e"/>
 </record_update>

@@ -84,7 +84,7 @@
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 04:21:28</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f287ffcadb3013006c8e5ec0cf961978</sys_id>
         <sys_mod_count>14</sys_mod_count>
         <sys_name>RSP Data Table from Instance</sys_name>

@@ -6,7 +6,7 @@
         <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-18 04:27:50</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c75f58a3db7013006c8e5ec0cf961952</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>rpAccountService.RSP Data Table from Instance</sys_name>

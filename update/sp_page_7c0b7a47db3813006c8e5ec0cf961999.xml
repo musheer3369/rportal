@@ -10,7 +10,7 @@
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-17 02:30:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7c0b7a47db3813006c8e5ec0cf961999</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>my_incidents</sys_name>
@@ -23,4 +23,5 @@
         <sys_updated_on>2018-03-17 03:19:35</sys_updated_on>
         <title>My Incidents</title>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=7c0b7a47db3813006c8e5ec0cf961999"/>
 </record_update>

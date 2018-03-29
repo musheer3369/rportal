@@ -6,7 +6,7 @@
         <sys_class_name>sp_ng_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-16 05:27:35</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>7bb91a3edb3013006c8e5ec0cf9619cc</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>ricoh-nav-template</sys_name>

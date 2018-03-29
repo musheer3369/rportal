@@ -10,7 +10,7 @@
         <sys_class_name>sp_page</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-23 04:34:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>53d0da89db4913006c8e5ec0cf96192c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>my_reports</sys_name>
@@ -23,4 +23,5 @@
         <sys_updated_on>2018-03-23 04:34:37</sys_updated_on>
         <title>My Reports</title>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=53d0da89db4913006c8e5ec0cf96192c"/>
 </record_update>

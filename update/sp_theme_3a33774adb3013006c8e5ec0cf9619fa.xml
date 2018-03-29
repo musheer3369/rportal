@@ -10,7 +10,7 @@
         <sys_class_name>sp_theme</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 04:03:05</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3a33774adb3013006c8e5ec0cf9619fa</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>Ricoh Theme</sys_name>

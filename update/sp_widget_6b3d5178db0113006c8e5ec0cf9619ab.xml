@@ -264,7 +264,7 @@ sp-variable-layout&gt;fieldset .row{&#13;
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-22 06:10:37</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>6b3d5178db0113006c8e5ec0cf9619ab</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>RSP Incident Widget</sys_name>

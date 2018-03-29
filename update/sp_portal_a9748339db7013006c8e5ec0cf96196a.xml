@@ -19,7 +19,7 @@
         <sys_class_name>sp_portal</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-13 06:00:30</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>a9748339db7013006c8e5ec0cf96196a</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>Ricoh Service Portal</sys_name>
@@ -34,6 +34,7 @@
         <title>Ricoh Service Portal</title>
         <url_suffix>rsp</url_suffix>
     </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=a9748339db7013006c8e5ec0cf96196a"/>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color>#ffffff</average_image_color>
         <compressed>true</compressed>

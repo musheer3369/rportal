@@ -59,7 +59,7 @@
         <sys_class_name>sp_header_footer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 03:56:59</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>c4f17f02db3013006c8e5ec0cf96199a</sys_id>
         <sys_mod_count>8</sys_mod_count>
         <sys_name>RSP Header</sys_name>

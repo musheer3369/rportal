@@ -29,7 +29,7 @@
         <sys_class_name>sp_header_footer</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 04:05:24</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>dbd3f74adb3013006c8e5ec0cf96191b</sys_id>
         <sys_mod_count>8</sys_mod_count>
         <sys_name>RSP Footer</sys_name>

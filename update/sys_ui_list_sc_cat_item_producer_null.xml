@@ -4,7 +4,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>name</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>0</position>
@@ -19,7 +19,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>short_description</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>1</position>
@@ -34,7 +34,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>active</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>2</position>
@@ -49,7 +49,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>roles</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>3</position>
@@ -64,7 +64,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sc_catalogs</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>4</position>
@@ -79,7 +79,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>category</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>5</position>
@@ -94,7 +94,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>price</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>6</position>
@@ -109,7 +109,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>type</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>7</position>
@@ -124,7 +124,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>sys_updated_on</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>8</position>
@@ -139,7 +139,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>no_cart</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>9</position>
@@ -154,7 +154,7 @@
         <sys_ui_list_element action="INSERT_OR_UPDATE">
             <average_value>false</average_value>
             <element>no_quantity</element>
-            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">2b9608c1dbc5b2005524fbec0f9619b7</list_id>
+            <list_id display_value="sc_cat_item" element="NULL" name="sc_cat_item" parent="NULL" relationship="NULL" sys_domain="global" view="Default view">ee824c88d7211100f2d224837e610302</list_id>
             <max_value>false</max_value>
             <min_value>false</min_value>
             <position>10</position>
@@ -179,7 +179,7 @@
             <sys_class_name>sys_ui_list</sys_class_name>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2018-03-23 13:44:44</sys_created_on>
-            <sys_customer_update>true</sys_customer_update>
+            <sys_customer_update>false</sys_customer_update>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>61ce04d1db4d13006c8e5ec0cf961937</sys_id>
@@ -192,7 +192,7 @@
             <sys_update_name>sys_ui_list_sc_cat_item_producer_null</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2018-03-23 13:44:44</sys_updated_on>
-            <sys_user display_value="System Administrator">3ab6703adb39ba406d7070e21f96199e</sys_user>
+            <sys_user display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</sys_user>
             <view display_value="Default view" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>

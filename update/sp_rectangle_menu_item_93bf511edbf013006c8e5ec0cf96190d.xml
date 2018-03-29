@@ -25,7 +25,7 @@
         <sys_class_name>sp_rectangle_menu_item</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 11:57:09</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>93bf511edbf013006c8e5ec0cf96190d</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name>Request Now</sys_name>
@@ -42,4 +42,5 @@
         <url>rsp?id=rsp_sc_home</url>
         <url_target/>
     </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=93bf511edbf013006c8e5ec0cf96190d"/>
 </record_update>
