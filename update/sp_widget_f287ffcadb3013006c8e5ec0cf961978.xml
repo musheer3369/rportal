@@ -78,15 +78,15 @@
 	};
 	
 	//take the data table from global because some API calls not supported such as glidedatadescriptior etc.
-	data.dataTableWidget = $sp.getWidget('ricoh-data-table', widgetParams);
+	data.dataTableWidget = $sp.getWidget('rsp-data-table', widgetParams);
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 04:21:28</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>f287ffcadb3013006c8e5ec0cf961978</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>RSP Data Table from Instance</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -94,7 +94,7 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_f287ffcadb3013006c8e5ec0cf961978</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-18 04:27:11</sys_updated_on>
+        <sys_updated_on>2018-04-16 07:35:59</sys_updated_on>
         <template><![CDATA[<div>
   <div class="alert alert-danger" ng-if="data.invalid_table">
     ${Table not defined} '{{data.table_label}}'
