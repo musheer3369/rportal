@@ -264,9 +264,9 @@ sp-variable-layout&gt;fieldset .row{&#13;
         <sys_class_name>sp_widget</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-22 06:10:37</sys_created_on>
-        <sys_customer_update>false</sys_customer_update>
+        <sys_customer_update>true</sys_customer_update>
         <sys_id>6b3d5178db0113006c8e5ec0cf9619ab</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>RSP Incident Widget</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -274,15 +274,21 @@ sp-variable-layout&gt;fieldset .row{&#13;
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_6b3d5178db0113006c8e5ec0cf9619ab</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-23 07:07:39</sys_updated_on>
+        <sys_updated_on>2018-05-19 06:13:01</sys_updated_on>
         <template><![CDATA[<div >
    <widget id="breadcrumbs"></widget>
   <div><h1>{{::data.sc_cat_item.name}}</h1></div>
   <div class="text-muted">{{::data.sc_cat_item.short_description}}</div>
   <div ng-bind-html="::data.sc_cat_item.description"></div>
   <div>
-  <sp-model form-model="::data.sc_cat_item" mandatory="mandatory"></sp-model>
+  	<sp-model form-model="::data.sc_cat_item" mandatory="mandatory"></sp-model>
+    <now-attachments-list template="sp_attachment_single_line"></now-attachments-list>
   </div>
+  <button name="submit" ng-disabled="submitted" ng-click="triggerOnSubmit()" class="btn btn-primary">{{submitButtonMsg}}</button>
+  <span ng-if="submitting" style="padding-left:4px">${Submitting...}</span>
+  <label ng-if="!submitted" style="float:right;font-weight:normal;cursor:pointer">
+    <sp-attachment-button></sp-attachment-button><span style="padding-left:4px;">${Add attachments}</span>
+  </label>
 </div>
 
 ]]></template>
