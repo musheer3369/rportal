@@ -61,7 +61,7 @@
         <sys_created_on>2018-03-14 03:56:59</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>c4f17f02db3013006c8e5ec0cf96199a</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>RSP Header</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -69,7 +69,7 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_header_footer_c4f17f02db3013006c8e5ec0cf96199a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-19 10:28:11</sys_updated_on>
+        <sys_updated_on>2018-05-20 05:44:40</sys_updated_on>
         <template><![CDATA[<div class="white-backdrop">
   <div class="container-fluid">
     <div class="row">
@@ -119,18 +119,14 @@
              <small>Logged in as</small> <strong>{{::user.name}}</strong>
              <span class="glyphicon glyphicon-chevron-down"></span>
            </a>
-           <ul class="dropdown-menu">
-             	
-            	<li><a href="{{::portal.logoutUrl}}">${Change Password}</a>
-                  <span class='spacer'>|</span>
-                  <a href="ms?id=sc_cat_item&sys_id=bf029e69dbea62806d7070e21f9619be&targetuser={{::user.sys_id}}">${Edit Contact Info}</a></li>
-            <li><a ng-href="?id=user_profile&sys_id={{::user.sys_id}}">${My Preferences}</a></li>            
+           <ul class="dropdown-menu">             	
+            <li><a href="rsp/?id=pr_changepassword">${Change Password}</a>
+            <li><a href="rsp?id=sc_cat_item&sys_id=bf029e69dbea62806d7070e21f9619be&targetuser={{::user.sys_id}}">${Edit Contact Info}</a></li>         
             <li><a href="{{::portal.logoutUrl}}">${Logout}</a></li>
            </ul>
         </li>
       </ul>
-    </div>
-  
+    </div>  
   </div>
     
 </div>
