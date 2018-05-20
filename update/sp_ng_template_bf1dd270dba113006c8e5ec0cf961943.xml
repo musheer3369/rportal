@@ -6,7 +6,7 @@
         <sys_class_name>sp_ng_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-16 07:21:15</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>bf1dd270dba113006c8e5ec0cf961943</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>rspActions</sys_name>

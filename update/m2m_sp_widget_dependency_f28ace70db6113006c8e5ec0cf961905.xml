@@ -6,7 +6,7 @@
         <sys_class_name>m2m_sp_widget_dependency</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-16 05:59:55</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>f28ace70db6113006c8e5ec0cf961905</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>selectize.Copy of Ricoh Data Table</sys_name>

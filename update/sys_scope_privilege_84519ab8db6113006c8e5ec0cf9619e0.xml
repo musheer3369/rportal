@@ -7,7 +7,7 @@
         <sys_class_name>sys_scope_privilege</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-04-16 06:29:31</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>84519ab8db6113006c8e5ec0cf9619e0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>GlideRecordSecure.getValue</sys_name>

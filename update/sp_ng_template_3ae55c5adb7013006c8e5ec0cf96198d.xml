@@ -6,7 +6,7 @@
         <sys_class_name>sp_ng_template</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-14 06:34:18</sys_created_on>
-        <sys_customer_update>true</sys_customer_update>
+        <sys_customer_update>false</sys_customer_update>
         <sys_id>3ae55c5adb7013006c8e5ec0cf96198d</sys_id>
         <sys_mod_count>5</sys_mod_count>
         <sys_name>tmpRequestNow</sys_name>

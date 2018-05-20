@@ -20,30 +20,30 @@
    //Type appropriate comment here, and begin script below
 	
      g_form.clearOptions('my_sys_class_name'); // Removes all options  
-/*   if (isLoading ) {
-      return;
-   }
-*/	
-//	debugger;
       
-  var ga=new GlideAjax('PR_GetCiClassList');
+    var ga=new GlideAjax('PR_GetCiClassList');
 	ga.addParam('sysparm_name', 'getCiClassList');
 	ga.addParam('company',g_form.getValue('company'));
 	ga.getXML(setClass);
 	
 	function setClass(response){
 		
+		try{
 		 var answer = response.responseXML.documentElement.getAttribute("answer");
-		answer=answer.toString();
-
-		// g_form.addOption('my_sys_class_name', '','-- NONE --');
-g_form.addOption('my_sys_class_name');
-		   var choice = answer.split('|'); // Parse out the string by |
+		answer=answer.toString();	
+		console.log("Answer:" + answer);
+         g_form.addOption('my_sys_class_name');
+		 var choice = answer.split('|'); // Parse out the string by |
         var label_value;
 		for(var i = 0;i < choice.length-1;i++) {
 		    label_value = choice[i].split('^'); // Further parse out the string by ^
             g_form.addOption('my_sys_class_name', label_value[1],label_value[0]);
 		}
+	}
+		catch(e)
+			{
+				console.log("RSP Error:" + e.message);
+			}
 	}
 	
 		
@@ -56,7 +56,7 @@ g_form.addOption('my_sys_class_name');
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>439f9cb3db4e13006c8e5ec0cf96196e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>CiClassOptions</sys_name>
         <sys_overrides/>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
@@ -65,7 +65,7 @@ g_form.addOption('my_sys_class_name');
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>catalog_script_client_439f9cb3db4e13006c8e5ec0cf96196e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-20 02:30:27</sys_updated_on>
+        <sys_updated_on>2018-05-20 06:40:21</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
