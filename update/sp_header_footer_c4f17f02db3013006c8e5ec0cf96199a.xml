@@ -34,7 +34,7 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */		
-	
+	var url_suffix =  $sp.getValue('url_suffix') ;
 	var menu = $sp.getValue('sp_rectangle_menu');
 		/*if(data.menu && data.menu.data){
 			data.menu.data.replace=true;
@@ -61,7 +61,7 @@
         <sys_created_on>2018-03-14 03:56:59</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>c4f17f02db3013006c8e5ec0cf96199a</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>13</sys_mod_count>
         <sys_name>RSP Header</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -69,7 +69,7 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_header_footer_c4f17f02db3013006c8e5ec0cf96199a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-20 05:44:40</sys_updated_on>
+        <sys_updated_on>2018-05-20 05:55:30</sys_updated_on>
         <template><![CDATA[<div class="white-backdrop">
   <div class="container-fluid">
     <div class="row">
@@ -120,8 +120,8 @@
              <span class="glyphicon glyphicon-chevron-down"></span>
            </a>
            <ul class="dropdown-menu">             	
-            <li><a href="rsp/?id=pr_changepassword">${Change Password}</a>
-            <li><a href="rsp?id=sc_cat_item&sys_id=bf029e69dbea62806d7070e21f9619be&targetuser={{::user.sys_id}}">${Edit Contact Info}</a></li>         
+            <li><a href="{{::url_suffix}}/?id=pr_changepassword">${Change Password}</a>
+            <li><a href="{{::url_suffix}}?id=sc_cat_item&sys_id=bf029e69dbea62806d7070e21f9619be&targetuser={{::user.sys_id}}">${Edit Contact Info}</a></li>         
             <li><a href="{{::portal.logoutUrl}}">${Logout}</a></li>
            </ul>
         </li>
