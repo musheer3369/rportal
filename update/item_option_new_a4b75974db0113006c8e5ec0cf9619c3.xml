@@ -18,7 +18,8 @@
         <do_not_select_first>false</do_not_select_first>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <field/>
+        <example_text/>
+        <field>company</field>
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
@@ -33,10 +34,10 @@
         <lookup_value/>
         <macro/>
         <mandatory>true</mandatory>
-        <map_to_field>false</map_to_field>
+        <map_to_field>true</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>Company</name>
+        <name>company</name>
         <order>100</order>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
@@ -60,15 +61,15 @@
         <sys_created_on>2018-03-22 05:47:35</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a4b75974db0113006c8e5ec0cf9619c3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>Company</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>company</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>item_option_new_a4b75974db0113006c8e5ec0cf9619c3</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-05-19 06:45:07</sys_updated_on>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-26 14:31:44</sys_updated_on>
         <table/>
         <tooltip/>
         <type>8</type>
@@ -86,4 +87,39 @@
         <write_roles/>
     </item_option_new>
     <sys_translated_text action="delete_multiple" query="documentkey=a4b75974db0113006c8e5ec0cf9619c3"/>
+    <fx_price action="delete_multiple" query="id=a4b75974db0113006c8e5ec0cf9619c3"/>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>price_if_checked</field>
+        <id>a4b75974db0113006c8e5ec0cf9619c3</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-26 14:14:19</sys_created_on>
+        <sys_id>e9440ca1dbafdb005524fbec0f9619ce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-26 14:14:19</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
+    <fx_price action="INSERT_OR_UPDATE">
+        <amount>0</amount>
+        <currency display_value="USD">USD</currency>
+        <field>rec_price_if_checked</field>
+        <id>a4b75974db0113006c8e5ec0cf9619c3</id>
+        <parent/>
+        <reference_amount>0</reference_amount>
+        <reference_currency display_value="USD">USD</reference_currency>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-26 14:14:19</sys_created_on>
+        <sys_id>6d440ca1dbafdb005524fbec0f9619d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-26 14:14:19</sys_updated_on>
+        <table>item_option_new</table>
+        <type>calculated</type>
+    </fx_price>
 </record_update>

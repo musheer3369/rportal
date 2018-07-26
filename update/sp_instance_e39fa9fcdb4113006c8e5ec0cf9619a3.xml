@@ -12,7 +12,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="2">7bb729f8db4113006c8e5ec0cf961917</sp_column>
-        <sp_widget display_value="Ricoh SC Categories">647eb357dbd0570039d9722ebf9619bd</sp_widget>
+        <sp_widget display_value="">647eb357dbd0570039d9722ebf9619bd</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-22 07:30:53</sys_created_on>
@@ -31,5 +31,4 @@
         <url/>
         <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=e39fa9fcdb4113006c8e5ec0cf9619a3"/>
 </record_update>

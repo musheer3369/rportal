@@ -6,6 +6,7 @@
         <applies_extended>false</applies_extended>
         <applies_req_item>false</applies_req_item>
         <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <cat_item display_value="Help Now">c6961174db0113006c8e5ec0cf9619c5</cat_item>
         <cat_variable>IO:a4b75974db0113006c8e5ec0cf9619c3</cat_variable>

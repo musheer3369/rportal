@@ -12,7 +12,7 @@
         <short_description/>
         <size>md</size>
         <sp_column display_value="2">e9588db6db8113006c8e5ec0cf9619a7</sp_column>
-        <sp_widget display_value="Ricoh Reports Dashboard">93e0436fdba4530039d9722ebf96192b</sp_widget>
+        <sp_widget display_value="">93e0436fdba4530039d9722ebf96192b</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-28 09:47:25</sys_created_on>
@@ -31,5 +31,4 @@
         <url/>
         <widget_parameters/>
     </sp_instance>
-    <sys_translated_text action="delete_multiple" query="documentkey=3168c576db8113006c8e5ec0cf96194e"/>
 </record_update>
