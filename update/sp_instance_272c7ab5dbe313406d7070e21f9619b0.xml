@@ -7,26 +7,26 @@
         <css/>
         <glyph/>
         <id/>
-        <order>1</order>
+        <order>2</order>
         <roles/>
         <short_description/>
         <size>md</size>
-        <sp_column display_value="1">f3b729f8db4113006c8e5ec0cf961915</sp_column>
-        <sp_widget display_value="RSP Left Navigation">d506bb8adb3013006c8e5ec0cf961934</sp_widget>
+        <sp_column display_value="3">b7b729f8db4113006c8e5ec0cf961919</sp_column>
+        <sp_widget display_value="RSP SC Popular Items">4190123ddb2313406d7070e21f9619aa</sp_widget>
         <sys_class_name>sp_instance</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-22 06:57:35</sys_created_on>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-27 22:16:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>2bf7e5f8db4113006c8e5ec0cf96196b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_id>272c7ab5dbe313406d7070e21f9619b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
-        <sys_update_name>sp_instance_2bf7e5f8db4113006c8e5ec0cf96196b</sys_update_name>
+        <sys_update_name>sp_instance_272c7ab5dbe313406d7070e21f9619b0</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-07-26 19:03:07</sys_updated_on>
+        <sys_updated_on>2018-07-27 22:16:18</sys_updated_on>
         <title/>
         <url/>
         <widget_parameters/>

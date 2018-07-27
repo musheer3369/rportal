@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="RSP SC Popular Items">4190123ddb2313406d7070e21f9619aa</child>
+        <cloned>2018-07-27 19:05:48</cloned>
+        <last_validated>2018-07-27 19:05:48</last_validated>
+        <parent display_value="SC Popular Items">cbcacf13cb21020000f8d856634c9ca0</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;sc&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;sc_catalog&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;SC Popular Items&lt;/name&gt;&lt;option_schema&gt;[{"hint":"Max number of popular items shown (if empty, defaults to 9)","name":"limit","default_value":"9","section":"Behavior","label":"Limit","type":"integer"},{"hint":"Include requests made through Record Producers","name":"include_record_producers","section":"Behavior","label":"Include Record Producers","type":"boolean"}]&lt;/option_schema&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles&gt;snc_external,snc_internal&lt;/roles&gt;&lt;script&gt;&lt;![CDATA[data.sc_catalog = $sp.getValue('sc_catalogs') || $sp.getValue('sc_catalog');
+data.showPrices = $sp.showCatalogPrices();
+data.limit = options.limit || 9;
+var items = [];
+
+var count = new GlideAggregate('sc_req_item');
+count.addAggregate('COUNT','cat_item');
+count.groupBy('cat_item');
+count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+count.addQuery('cat_item.sc_catalogs', 'IN', data.sc_catalog);
+count.addEncodedQuery('cat_item.hide_sp=false^ORcat_item.hide_spISEMPTY');
+count.orderByAggregate('COUNT', 'cat_item');
+count.query();
+while (count.next() &amp;&amp; items.length &lt; data.limit) {
+  if (!$sp.canReadRecord("sc_cat_item", count.cat_item.sys_id.getDisplayValue()))
+    continue; // user does not have permission to see this item
+
+  var item = {};
+  item.count = count.getAggregate('COUNT', 'cat_item');
+  item.name = count.cat_item.name.getDisplayValue();
+  item.short_description = count.cat_item.short_description.getDisplayValue();
+  item.picture = count.cat_item.picture.getDisplayValue();
+  item.price = count.cat_item.price.getDisplayValue();
+  item.hasPrice = count.cat_item.price != 0;
+  item.sys_id = count.cat_item.sys_id.getDisplayValue();
+  items.push(item);
+}
+
+if (options.include_record_producers == 'true' || options.include_record_producers == true) {
+	var producers = 0;
+	count = new GlideAggregate('sc_item_produced_record');
+	count.addQuery('producer.sc_catalogs', 'IN', data.sc_catalog);
+	count.addEncodedQuery('producer.hide_sp=false^ORproducer.hide_spISEMPTY');
+	count.addAggregate('COUNT', 'producer');
+	count.groupBy('producer');
+	count.orderByAggregate('COUNT', 'producer');
+	count.query();
+	while (count.next() &amp;&amp; producers &lt; data.limit) {
+		
+		var catalogItemJS = new sn_sc.CatItem(count.getValue('producer'));
+		if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+			continue;
+		var catItemDetails = catalogItemJS.getItemSummary();
+
+		var item = {};
+		item.count = count.getAggregate('COUNT', 'producer');
+		item.name = catItemDetails.name;
+		item.short_description = catItemDetails.short_description;
+		item.picture = catItemDetails.picture;
+		item.price = catItemDetails.price;
+		item.hasPrice = item.price != 0;
+		item.sys_id = catItemDetails.sys_id;
+		item.page = 'sc_cat_item';
+		items.push(item);
+		producers++;
+	}
+}
+
+data.items = items;]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-08-04 00:10:03&lt;/sys_created_on&gt;&lt;sys_customer_update&gt;false&lt;/sys_customer_update&gt;&lt;sys_id&gt;cbcacf13cb21020000f8d856634c9ca0&lt;/sys_id&gt;&lt;sys_mod_count&gt;129&lt;/sys_mod_count&gt;&lt;sys_name&gt;SC Popular Items&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Service Catalog" source="com.glide.service-portal.service-catalog"&gt;4c0d4dbddb529300f20cf209af9619d4&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_replace_on_upgrade&gt;false&lt;/sys_replace_on_upgrade&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cbcacf13cb21020000f8d856634c9ca0&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-04 13:44:39&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;h1 class="font-thin m-t-none"&gt;{{::options.title}}&lt;/h1&gt;
+
+&lt;div class="row" &gt;
+  &lt;div class="col-sm-6 col-md-4" ng-repeat="item in data.items | orderBy: '-count' | limitTo: data.limit"&gt;
+
+    &lt;div class="panel panel-default"&gt;
+      &lt;a href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="panel-body block"&gt;
+        &lt;div class="overflow-100"&gt;
+          &lt;h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::item.name}}"&gt;{{::item.name}}&lt;/h2&gt;
+          &lt;img ng-src="{{::item.picture}}" ng-if="::item.picture" class="m-r-sm m-b-sm item-image pull-left" alt="{{::item.name}}" role="presentation" /&gt;
+          &lt;div class="text-muted item-short-desc"&gt;{{::item.short_description}}&lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/a&gt;
+      &lt;div class="panel-footer"&gt;
+        &lt;a href="?id=sc_cat_item&amp;sys_id={{item.sys_id}}" class="pull-left text-muted" tabindex="-1"&gt;${View Details}&lt;/a&gt; &lt;span ng-if="data.showPrices &amp;&amp; item.hasPrice" class="pull-right item-price font-bold"&gt;{{::item.price}}&lt;/span&gt; &amp;nbsp;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-27 19:05:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>1d90123ddb2313406d7070e21f9619ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>4190123ddb2313406d7070e21f9619aa</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_1d90123ddb2313406d7070e21f9619ae</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-27 19:05:48</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

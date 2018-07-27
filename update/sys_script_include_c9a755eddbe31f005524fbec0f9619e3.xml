@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_90620_rp.rsp_ci_helper</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>rsp_ci_helper</name>
+        <script><![CDATA[var rsp_ci_helper = Class.create();
+rsp_ci_helper.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+getSubAsset: function(){
+		var subAssetOpt='';
+		var sys_class_name=this.getParameter('sys_class_name');
+		var gr=new GlideRecord(sys_class_name);
+		gr.addQuery('company',this.getParameter('company'));
+		gr.orderBy('name');
+		gr.query();
+		
+		while (gr.next())
+{
+	//subAssetOpt=subAssetOpt+gr.name.getDisplayValue() +'^' + gr.sys_id + '|';
+	
+	if(gr.serial_number != ''){
+	//gs.print(gr.name.getDisplayValue() + '('  + gr.serial_number +')^' + gr.sys_id + '|');
+		subAssetOpt=subAssetOpt+gr.name.getDisplayValue() + '-' + gr.serial_number +'^' + gr.sys_id + '|';
+
+             }
+       else
+            {
+     	      //  gs.print(gr.name.getDisplayValue() + '^' + gr.sys_id + '|');
+				subAssetOpt=subAssetOpt+gr.name.getDisplayValue()  +'^' + gr.sys_id + '|';
+           }
+}		
+	return 	subAssetOpt;
+	}
+	,
+	getCiClassCategories: function(){
+		var subAssetOpt='';
+		var companyId=this.getParameter('company');		
+		var gr=new GlideAggregate('cmdb_ci');
+			gr.addAggregate('MIN','sys_class_name');
+			gr.addQuery('company',companyId);
+			gr.addQuery('sys_class_name' ,'!=' ,'u_cmdb_ci_accountinfo'); // do not show credentials table info.
+			gr.groupBy('sys_class_name');
+			gr.query();
+
+		while (gr.next()){
+		var min=gr.getAggregate('MIN','sys_class_name');
+			subAssetOpt=subAssetOpt+gr.sys_class_name.getDisplayValue()+ '^' + min + '|';
+		}
+	
+	return 	subAssetOpt;
+	},
+	
+	
+	
+    type: 'rsp_ci_helper'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-26 20:20:40</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c9a755eddbe31f005524fbec0f9619e3</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>rsp_ci_helper</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sys_script_include_c9a755eddbe31f005524fbec0f9619e3</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-26 21:02:40</sys_updated_on>
+    </sys_script_include>
+</record_update>

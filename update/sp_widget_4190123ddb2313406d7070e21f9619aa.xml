@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>sc</category>
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rsp-sc-popular-items</id>
+        <internal>false</internal>
+        <link/>
+        <name>RSP SC Popular Items</name>
+        <option_schema>[{"hint":"Max number of popular items shown (if empty, defaults to 9)","name":"limit","default_value":"9","section":"Behavior","label":"Limit","type":"integer"},{"hint":"Include requests made through Record Producers","name":"include_record_producers","section":"Behavior","label":"Include Record Producers","type":"boolean"}]</option_schema>
+        <public>false</public>
+        <roles>snc_external,snc_internal</roles>
+        <script><![CDATA[data.sc_catalog = $sp.getValue('sc_catalogs') || $sp.getValue('sc_catalog');
+data.showPrices = $sp.showCatalogPrices();
+data.limit = options.limit || 9;
+console.log("OP:" +  $sp.getValue('sc_catalog'));
+var items = [];
+
+var count = new GlideAggregate('sc_req_item');
+count.addAggregate('COUNT','cat_item');
+count.groupBy('cat_item');
+count.addQuery('cat_item.sys_class_name', 'NOT IN', 'sc_cat_item_guide,sc_cat_item_wizard,sc_cat_item_content');
+/*count.addQuery('cat_item.sc_catalogs', 'IN', data.sc_catalog);*/
+count.addQuery("cat_item.active","true");
+count.addQuery("cat_item.sc_catalogs",'IN',"e0d08b13c3330100c8b837659bba8fb4");
+count.addEncodedQuery('cat_item.hide_sp=false^ORcat_item.hide_spISEMPTY');
+count.orderByAggregate('COUNT', 'cat_item');
+count.query();
+while (count.next() && items.length < data.limit) {
+  if (!$sp.canReadRecord("sc_cat_item", count.cat_item.sys_id.getDisplayValue()))
+    continue; // user does not have permission to see this item
+
+  var item = {};
+  item.count = count.getAggregate('COUNT', 'cat_item'); 
+  item.name = count.cat_item.name.getDisplayValue();
+  item.short_description = count.cat_item.short_description.getDisplayValue();
+  item.picture = count.cat_item.picture.getDisplayValue();
+  item.price = count.cat_item.price.getDisplayValue();
+  item.hasPrice = count.cat_item.price != 0;
+  item.sys_id = count.cat_item.sys_id.getDisplayValue();
+  items.push(item);
+}
+
+if (options.include_record_producers == 'true' || options.include_record_producers == true) {
+	var producers = 0;
+	count = new GlideAggregate('sc_item_produced_record');
+	count.addQuery('producer.sc_catalogs', 'IN', data.sc_catalog);
+	count.addEncodedQuery('producer.hide_sp=false^ORproducer.hide_spISEMPTY');
+	count.addAggregate('COUNT', 'producer');
+	count.groupBy('producer');
+	count.orderByAggregate('COUNT', 'producer');
+	count.query();
+	while (count.next() && producers < data.limit) {
+		
+		var catalogItemJS = new sn_sc.CatItem(count.getValue('producer'));
+		if (!catalogItemJS.canView(gs.isMobile()) || !catalogItemJS.isVisibleServicePortal())
+			continue;
+		var catItemDetails = catalogItemJS.getItemSummary();
+
+		var item = {};
+		item.count = count.getAggregate('COUNT', 'producer');
+		item.name = catItemDetails.name;
+		item.short_description = catItemDetails.short_description;
+		item.picture = catItemDetails.picture;
+		item.price = catItemDetails.price;
+		item.hasPrice = item.price != 0;
+		item.sys_id = catItemDetails.sys_id;
+		item.page = 'sc_cat_item';
+		items.push(item);
+		producers++;
+	}
+}
+
+data.items = items;]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-27 19:05:48</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>4190123ddb2313406d7070e21f9619aa</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>RSP SC Popular Items</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_widget_4190123ddb2313406d7070e21f9619aa</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-27 22:16:46</sys_updated_on>
+        <template><![CDATA[<h1 class="font-thin m-t-none">{{::options.title}}</h1>
+
+<div class="row" >
+  <div class="col-sm-6 col-md-4" ng-repeat="item in data.items | orderBy: '-count' | limitTo: data.limit">
+
+    <div class="panel panel-default">
+      <a href="?id=sc_cat_item&sys_id={{item.sys_id}}" class="panel-body block">
+        <div class="overflow-100">
+          <h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::item.name}}">{{::item.name}}</h2>
+          <img ng-src="{{::item.picture}}" ng-if="::item.picture" class="m-r-sm m-b-sm item-image pull-left" alt="{{::item.name}}" role="presentation" />
+          <div class="text-muted item-short-desc">{{::item.short_description}}</div>
+        </div>
+      </a>
+      <div class="panel-footer">
+        <a href="?id=sc_cat_item&sys_id={{item.sys_id}}" class="pull-left text-muted" tabindex="-1">${View Details}</a> <span ng-if="data.showPrices && item.hasPrice" class="pull-right item-price font-bold">{{::item.price}}</span> &nbsp;
+      </div>
+    </div>
+
+  </div>
+</div>]]></template>
+    </sp_widget>
+</record_update>
