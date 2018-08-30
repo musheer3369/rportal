@@ -20,12 +20,13 @@
 	 * fields (string) = comma seperated list of fields that become the list columns
 	 * view (string) = the default view to load for columns, overrides fields
 	*/
-	$('#my-accounts').selectize({
+$select=	$('#my-accounts').selectize({
 		valueField:'value',labelField:'name',searchField:'name',loadingClass:'loading...',
 							    placeholder:'Search an Account',
 							    plugins: ['remove_button'],create:false,
 								load:function(query, callback){	
-									querySearch2(query).then(function(data){																				callback(data);
+									querySearch2(query).then(function(data){													
+										callback(data);
 									});
 								 }	,
 								render: {
@@ -33,10 +34,8 @@
 										return '<div>' + escape(item.name) + '</div>';
 									}},									
 								onDropdownClose:function($dropdown){
-								
-									rpAccountService.setInfo(this.items);									
-									c.data.AccountsData= rpAccountService.getStringIds();			
-									console.log(rpAccountService.getStringIds());
+								  rpAccountService.setInfo(this.items);									
+									c.data.AccountsData= rpAccountService.getStringIds();												
 									c.server.update();
 									}, 
 								 onInitialize:function()
@@ -127,8 +126,9 @@
 		});		
 	}
 
-	c.init = function(){	
-		c.server.get().then(function(response){			
+	c.init = function(){			
+		
+		c.server.get().then(function(response){				
 			rpAccountService.setInfo(c.data.myCompany);					
 		});		
 		
@@ -301,7 +301,14 @@
 		});
 	};
 	
+	c.changeFilter = function(newTerm){		
+		$scope.data.filter = newTerm;
+		$scope.setSearch();
+	};
+	
 	c.filterOut = function(field, newTerm) {
+		
+		
 		var eq = $scope.data.filter;
 		if (eq.length)
 					eq += '^';
@@ -582,15 +589,15 @@ tbody tr:last-child {&#13;
         <script><![CDATA[(function() {
 	if (!input) // asynch load list
 		return;
-		
-	
+			
 			var grs = new GlideRecord("sys_user");
 			grs.get(gs.getUserID());
 			var x ={};
 			x.name = grs.company.getDisplayValue("name");
 			x.value = String(grs.company);	
-			data.myCompany = x;	
-			
+	    
+			data.myCompany = x;			
+	   
 	if(input.AccountsData)
 		{
 		data.AccountsData = input.AccountsData;	
@@ -603,7 +610,7 @@ tbody tr:last-child {&#13;
 		grc.addActiveQuery();
 		grc.addNotNullQuery("name");	  
 		grc.addEncodedQuery('u_site_idSTARTSWITH'+input.searchStr+'^ORnameSTARTSWITH'+input.searchStr);		
-		grc.setLimit(25);
+		grc.setLimit(30);
 		grc.orderBy("name");
 		grc.query();		
 		while(grc.next())
@@ -662,6 +669,7 @@ tbody tr:last-child {&#13;
 	else*/
 		gr = new GlideRecordSecure(data.table);
 	
+	
 	if (!gr.isValid()) {
 		data.invalid_table = true;
 		data.table_label = data.table;
@@ -684,8 +692,9 @@ tbody tr:last-child {&#13;
 		data.keywords = null;
 	}
 	
-	data.filter = gr.getEncodedQuery();
-  
+	data.filter = gr.getEncodedQuery();  
+	
+	
 	if (data.o){
 		if (data.d == "asc")
 			gr.orderBy(data.o);
@@ -696,11 +705,18 @@ tbody tr:last-child {&#13;
 	data.window_start = data.page_index * data.window_size;
 	data.window_end = (data.page_index + 1) * data.window_size;
 	gr.chooseWindow(data.window_start, data.window_end);	
+	
 	if(data.AccountsData)
 		{
 		gr.addEncodedQuery("company.sys_idIN" + data.AccountsData);
 		}
-	
+	else
+		{
+			gr.addQuery("company.sys_id",data.myCompany.value);
+			
+		}
+	// filter exclude from portal
+	gr.addQuery("u_non_service_portal","false");	
 	gr._query();
 
 	data.row_count = gr.getRowCount();
@@ -759,15 +775,15 @@ tbody tr:last-child {&#13;
         <sys_created_on>2018-04-16 05:59:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>268a8e70db6113006c8e5ec0cf9619ff</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>59</sys_mod_count>
         <sys_name>RSP  Data Table</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_268a8e70db6113006c8e5ec0cf9619ff</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-16 07:35:39</sys_updated_on>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-08-28 10:51:29</sys_updated_on>
         <template><![CDATA[<div  class="row ricoh-panel" ng-init="c.init()">
       <widget id="breadcrumbs"></widget>
   		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4" ng-include="'rspKeywordSearch'">         

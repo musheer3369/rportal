@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
-        <category/>
+        <category>custom</category>
         <client_script><![CDATA[function ($scope, $http, spUtil, nowAttachmentHandler, $rootScope, $sanitize, $window, $sce,$timeout) {
 	var c = this;
 	c.quantity = 1;
@@ -146,11 +146,19 @@
 		if (c.options.table) {table = c.options.table;}
 		var url = spUtil.format(c.options.url, {page: page, table: table, sys_id: sys_id});
 		
+		
 		$timeout(function(){
+			//$window.location.href="/rsp?id=my_requests";
 			$window.location.href=url;
 			return;
 		},c.options.set_timeout);
 		
+		/*if (c.options.auto_redirect == "true") {
+			$window.location.href = "/rsp?id=my_requests";
+			return;
+		}*/
+		
+
 		var t = $scope.m.createdMsg + " " + n + " - ";
 		//t += $scope.m.trackMsg;
 		t += ' <a href="' + url + '">' + $scope.m.clickMsg + '</a>';
@@ -207,10 +215,10 @@ sp-variable-layout&gt;fieldset .row{&#13;
         <docs/>
         <field_list>color</field_list>
         <has_preview>false</has_preview>
-        <id>rsp-incident-widget</id>
+        <id>rsp-request-widget</id>
         <internal>false</internal>
         <link/>
-        <name>RSP Incident Widget</name>
+        <name>RSP Request Widget</name>
         <option_schema>[{"name":"show_add_cart_button","label":"Show Add Cart Button","type":"boolean"},{"hint":"Define a URL Format for successful order page","name":"url","label":"Custom URL Format","type":"string"},{"displayValue":"Page","name":"page","label":"Successful Order Page","type":"reference","value":"sp_page","ed":{"reference":"sp_page"}},{"displayValue":"Table","name":"table","label":"Successful Order Table","type":"reference","value":"sys_db_object","ed":{"reference":"sys_db_object"}},{"hint":"Enable auto-redirection after ordering an item","name":"auto_redirect","label":"Auto Redirect on Successful Order","type":"boolean"}]</option_schema>
         <public>false</public>
         <roles>snc_external,snc_internal</roles>
@@ -231,6 +239,7 @@ sp-variable-layout&gt;fieldset .row{&#13;
 	}
 
 	options.url = options.url || "?id={page}&table={table}&sys_id={sys_id}";
+	
 	data.showPrices = $sp.showCatalogPrices();
 	var m = data.msgs = {};
 	m.submitMsg = gs.getMessage("Submit");
@@ -266,23 +275,24 @@ sp-variable-layout&gt;fieldset .row{&#13;
 		}
 	}
 
+	
 	$sp.logStat('Catalog View', data.sc_cat_item.sys_class_name, data.sys_id, data.sc_cat_item.name);
 })()]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2018-03-22 06:10:37</sys_created_on>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-30 19:41:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
-        <sys_id>6b3d5178db0113006c8e5ec0cf9619ab</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>RSP Incident Widget</sys_name>
+        <sys_id>3d757972dba393405524fbec0f961933</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>RSP Request Widget</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
-        <sys_update_name>sp_widget_6b3d5178db0113006c8e5ec0cf9619ab</sys_update_name>
+        <sys_update_name>sp_widget_3d757972dba393405524fbec0f961933</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-07-30 21:48:33</sys_updated_on>
+        <sys_updated_on>2018-07-30 21:10:51</sys_updated_on>
         <template><![CDATA[<div >
    <widget id="breadcrumbs"></widget>
   <div><h1>{{::data.sc_cat_item.name}}</h1></div>

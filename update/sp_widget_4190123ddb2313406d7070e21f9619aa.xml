@@ -86,7 +86,7 @@ data.items = items;]]></script>
         <sys_created_on>2018-07-27 19:05:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>4190123ddb2313406d7070e21f9619aa</sys_id>
-        <sys_mod_count>24</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>RSP SC Popular Items</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -94,14 +94,14 @@ data.items = items;]]></script>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_4190123ddb2313406d7070e21f9619aa</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-07-27 22:16:46</sys_updated_on>
+        <sys_updated_on>2018-07-30 19:47:45</sys_updated_on>
         <template><![CDATA[<h1 class="font-thin m-t-none">{{::options.title}}</h1>
 
 <div class="row" >
   <div class="col-sm-6 col-md-4" ng-repeat="item in data.items | orderBy: '-count' | limitTo: data.limit">
 
     <div class="panel panel-default">
-      <a href="?id=sc_cat_item&sys_id={{item.sys_id}}" class="panel-body block">
+      <a href="?id=rsp_request_form&sys_id={{item.sys_id}}" class="panel-body block">
         <div class="overflow-100">
           <h2 class="h4 m-t-none m-b-xs text-overflow-ellipsis" title="{{::item.name}}">{{::item.name}}</h2>
           <img ng-src="{{::item.picture}}" ng-if="::item.picture" class="m-r-sm m-b-sm item-image pull-left" alt="{{::item.name}}" role="presentation" />
@@ -109,7 +109,7 @@ data.items = items;]]></script>
         </div>
       </a>
       <div class="panel-footer">
-        <a href="?id=sc_cat_item&sys_id={{item.sys_id}}" class="pull-left text-muted" tabindex="-1">${View Details}</a> <span ng-if="data.showPrices && item.hasPrice" class="pull-right item-price font-bold">{{::item.price}}</span> &nbsp;
+        <a href="?id=rsp_request_form&sys_id={{item.sys_id}}" class="pull-left text-muted" tabindex="-1">${View Details}</a> <span ng-if="data.showPrices && item.hasPrice" class="pull-right item-price font-bold">{{::item.price}}</span> &nbsp;
       </div>
     </div>
 

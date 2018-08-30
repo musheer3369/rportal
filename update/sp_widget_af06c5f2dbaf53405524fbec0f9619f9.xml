@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rsp-terms-of-use</id>
+        <internal>false</internal>
+        <link/>
+        <name>RSP Terms Of Use</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-30 16:15:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>af06c5f2dbaf53405524fbec0f9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>RSP Terms Of Use</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_widget_af06c5f2dbaf53405524fbec0f9619f9</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-30 16:15:58</sys_updated_on>
+        <template><![CDATA[<div>
+  <h1>Terms of Use </h1>
+Welcome to the Ricoh Customer Service Portal (the "Portal"), operated by Ricoh USA, Inc., and its affiliated entity, mindSHIFT Technologies, Inc. (individually or collectively, "Ricoh").
+No product or service is offered for sale or sold on the Portal. Ricoh uses the Portal solely to provide its current customers with technical support and other information (any one or more of the services and resources available through the Portal, "Support") under each customer's Current Agreements and these Terms of Use (the "Terms of Use").
+For the purposes of the Terms of Use: (a), "you" means, and "yours" refers to, you as an individual, and if you are accessing or using the Portal on behalf of one or more legal entities, each of those entities; and (b) "Current Agreement" means an agreement between Ricoh and you in effect on the date that you access or use the Portal or attempt to do so. 
+The Terms of Use: (a) are a valid and binding modification of each of your Current Agreements; (b) supersede each Current Agreement with respect to all matters concerning the Portal; and (c) will, in the event of a conflict between the Terms of Use and any one or more of your Current Agreements, govern the rights and obligations of Ricoh and you with respect to your access to and use of the Portal and your attempts to do so.  
+BY ACCESSING THE PORTAL OR USING IT TO SEEK SUPPORT, YOU REPRESENT THAT YOU: (A) ARE, OR ARE THE AUTHORIZED REPRESENTATIVE OF, A CURRENT RICOH CUSTOMER; AND (B) HAVE READ AND UNDERSTAND THE TERMS OF USE AND AGREE, ON YOUR BEHALF AND ON BEHALF OF EACH LEGAL ENTITY YOU REPRESENT, TO BE BOUND BY THEM. IF YOU DO NOT AGREE, DO NOT ACCESS OR USE THE PORTAL.  RICOH MAY REVISE THE TERMS OF USE AT ANY TIME. YOUR CONTINUED USE OF THE PORTAL AFTER ANY SUCH REVISION CONSTITUTES YOUR AGREEMENT TO USE THE PORTAL SUBJECT TO THE REVISED TERMS OF USE.
+Ricoh may change and / or alter the contents or functionality of the Portal, or may suspend or discontinue the Support through the Portal at any time without notice. NEITHER RICOH NOR ANY OF ITS AFFILIATES WILL BE LIABLE FOR DAMAGES OF ANY TYPE OR AMOUNT ON ANY CLAIM ARISING OUT OF ANY ALTERATION OR CHANGE OF THE FEATURES OR FUNCTIONS OF THE PORTAL OR YOUR INABILITY TO ACCESS OR USE THE PORTAL AT ANY TIME.
+Privacy Policy
+<br>
+Information collected by Ricoh using the Portal is subject to Ricoh's Privacy policy, which is available here: Privacy Policy. You consent to all actions taken by Ricoh with respect to your information in accordance with our Privacy Policy.
+Your user name and password for the Portal and all information you obtain, in any form, using the Portal are Ricoh's Confidential Information. You shall: (a) maintain the confidentiality of your password and other access credentials using reasonable means; and (b) notify Ricoh immediately if: (i) your access credentials for the Portal are lost or stolen; or (ii) any person you permit to use your systems uses the Portal: (a) in violation of the Terms of Use; (b)  in any other unauthorized manner, or (c) creates a risk to the confidentiality, availability or integrity of the Portal or any one or more of the Portal's features, functions, or resources. Ricoh will have no obligation or liability for any loss you incur as a result of the unauthorized use of your access credentials or any unauthorized use of the Portal by anyone you permit to use your systems, with or without your knowledge. You may not access or attempt the access the Portal by any means other than the current and valid user name, password or other access credentials Ricoh provides to you. Your use or attempted use of any other customer's access credentials for the Portal is prohibited. You will be liable for all losses and damages incurred by Ricoh as the result of any unauthorized use described in this paragraph by you or by anyone you permit to use your systems, with or without your knowledge.
+<br>
+In addition, you shall indemnify and defend Ricoh from and against each claim made by a non-party to the Terms of Use for all injuries and damages that party suffers as result of: (a) a breach of your confidentiality obligations concerning your access credentials for the Portal; (b) the unauthorized use of the Portal by anyone you permit to use your systems or access credentials for the Portal, with or without your knowledge; (c) your actual or attempted use of the Portal by any means other than the current valid access credentials provided to you by Ricoh; and (d) any other violation of the Terms of Use by or attributable to you. .
+<br>
+Intellectual Property; Right to Use; Limitation of Permitted Use
+The design, features, functionality, documents and information available on or by using the Portal are the property of Ricoh or its licensors, and are protected by U.S. copyright laws and other applicable laws and treaty provisions of countries throughout the world. Except as necessary for your own internal, non-public, temporary use of the Portal in accordance with these Terms of Use, you may not copy, reproduce, publish, display, perform, or create derivative works based on, the Portal or any feature, function, document, or other information Ricoh makes available on or through the Portal. You shall not, under any circumstances, access, use or exploit the Portal or attempt to access, use or exploit the Portal for any purpose that: (a) is unethical or immoral, as determined in Ricoh's judgment, (b) violates applicable law; or (c) competes with or is detrimental to Ricoh, its affiliates, or any one or more of their business or customers.  
+<br>
+You shall not: (a) alter, modify or delete the Portal, any element of the Portal or information Ricoh makes available on the Portal; (b) take any action that threatens: (i) the confidentiality, integrity or availability of any feature, function, document or other information Ricoh makes available on the Portal; (ii) the loss of or damage to, any other property of Ricoh or its licensors; (iii) or interferes with the secure and stable operation of the Portal (including but not limited to, by introducing any harmful code, virus, worm, trojan malware, or other malicious program or participating in any denial of service attack); (e) take any action that damages other Portal users or interferes with their access to or use of the Portal; (f) use or attempt to use any engine, software, tool, agent or other device or mechanism (including without limitation browsers, spiders, robots, avatars, or intelligent agents) to navigate or search the Portal other than the search engine and search agents Ricoh makes available as part of the Portal; or (g) attempt, in any manner or by any means, to access or use the Portal in any manner that violates the Terms of Use or in any manner other than by using the access credentials provided to you by Ricoh.
+Except for providing you the right, under your Current Agreements and the Terms of Use, to access and use the Portal to obtain Support, nothing in the Terms of Use is a grant, license, assignment, or other transfer of Ricoh's or any third-party's patent, utility model, trademark, trade name, service mark, copyright, design, trade secret or any other intellectual property right.  Regardless of whether you use the Portal in accordance with these Terms of Use, Ricoh retains all rights, title and interests in and to all its intellectual property at all times.
+<br>
+User Information
+Except where expressly requested by Ricoh in conjunction with your request for Support, Ricoh neither requests nor requires confidential or proprietary information or personal information (information that identifies or can be used to identify you personally) in conjunction with your use of the Portal. Whatever information you provide will be treated as confidential solely as your Current Agreements require.
+<br>
+Portal Security
+Ricoh uses reasonable safeguards to minimize information security risk associated with the operation of the Portal; however, you acknowledge that Ricoh cannot prevent interception of data or guarantee the security of information maintained on computers and on the internet.
+Disclaimers; Limitation of Liability
+ALTHOUGH RICOH WILL MAKE REASONABLE EFFORTS TO PROVIDE SUPPORT USING THE PORTAL, RICOH CANNOT PREDICT THE OUTCOME OF ANY ONE OR MORE REQUESTS FOR SUPPORT OR RELATED REQUESTS FOR INFORMATION OR OTHER COMMUNICATIONS. SUPPORT PROVIDED USING THE PORTAL IS PROVIDED "AS IS" AND "AS AVAILABLE." NEITHER RICOH NOR mindSHIFT MAKE ANY REPRESENTATION OR WARRANTY, EXPRESSED OR IMPLIED, STATUTORY OR OTHERWISE, INCLUDING ANY WARRANTY OR REPRESENTATION WITH RESPECT TO THE AVAILABILITY, ACCURACY, TIMELINESS, RELIABILITY, COMPLETENESS, FITNESS FOR PARTICULAR PURPOSE, NON-INFRINGEMENT, ACCESS TO OR ANY USE OF THE PORTAL, INCLUDING SUPPORT, COMMUNICATIONS, OR INFORMATION PROVIDED THROUGH THE PORTAL. ALL SUCH REPRESENTATIONS AND WARRANTIES ARE EXPRESSLY DISCLAIMED. RICOH, mindSHIFT AND THEIR RESPECTIVE VENDORS, LICENSORS AND SUPPLIERS WILL HAVE NO LIABILITY TO YOU OR TO ANY COMPANY OR ORGANIZATION YOU REPRESENT FOR ANY DIRECT, INDIRECT, SPECIAL, CONSEQUENTIAL, OR INCIDENTAL DAMAGES, WHETHER ARISING IN CONTRACT, TORT, STRICT LIABILITY OR OTHERWISE, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOST PROFITS OR REVENUE, COSTS OF REPLACEMENT GOODS, LOSS OR DAMAGE TO DATA, OR BUSINESS DISRUPTION ARISING FROM OR CONCERNING YOUR ACCESS TO, USE OF, OR INABILITY TO ACCESS OR USE THE PORTAL, EVEN IF RICOH OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+<br>
+Termination; Investigation
+Ricoh will have the right, in its sole discretion, for any reason or no reason, without notice or liability to you or any third party, to terminate your access to the Portal. Further, if Ricoh reasonably believes that you have utilized the Portal in any manner or in conjunction with any activity that is illegal or violates the rights of any third party, Ricoh may provide information about you and your use and related actions to governmental authorities or to each interested third party.
+<br>
+Integration; Severability
+The Terms of Use contain the entire understanding between you and Ricoh with respect to the Portal, and supersede all prior and contemporaneous communications, representations understandings and agreements, in any form, between you and Ricoh regarding its subject matter. If any provision of these Terms of Use is found invalid or unenforceable by a court of competent jurisdiction, that provision will be deemed severed, and the remainder of the Terms of Use will remain in full force and effect.
+<br>
+Dispute Resolution; Choice of Law; Venue; Class Action Waiver
+<br>
+THE FOLLOWING SECTION LIMITS YOUR LEGAL RIGHTS AGAINST RICOH.   YOU MUST READ IT CAREFULLY. 
+<br>
+ALL DISPUTES ARISING OUT OF THESE TERMS OF USE AND YOUR USE OF THE PORTAL WILL BE GOVERNED BY THE LAWS OF THE COMMONWEALTH OF VIRGINIA WITHOUT REGARD TO ITS CONFLICT OF LAW RULES. ANY ACTION ARISING OUT OF OR RELATED TO THESE TERMS OF USE AND/OR YOUR USE OF THE PORTAL WILL BE LITIGATED IN THE STATE OR FEDERAL COURT HAVING JURISDICTION OVER THE SUBJECT MATTER OF THE DISPUTE SITTING AND FOR, AT RICOH'S OPTION, EITHER: (A) CHESTER COUNTY, PA. OR (B) LOUDOUN COUNTY, VIRGINIA. YOU CONSENT, ON YOUR OWN BEHALF AND ON BEHALF OF YOUR SUCCESSORS AND ASSIGNS, TO THE JURISDICTION OF SAID COURTS AND WAIVE ALL LEGAL OR EQUITABLE DEFENSES AND OBJECTIONS, INCLUDING THE DOCTRINE OF FORUM NON CONVENIENS, TO PROCEEDING IN ANY OF THOSE COURTS. YOU AGREE NOT TO BRING ANY CLAIM AGAINST RICOH OR mindSHIFT AS A PLAINTIFF OR CLASS MEMBER IN ANY CLASS ACTION OR SIMILAR PROCEEDING.
+<br>
+March 2018
+<br>
+
+</div>]]></template>
+    </sp_widget>
+</record_update>

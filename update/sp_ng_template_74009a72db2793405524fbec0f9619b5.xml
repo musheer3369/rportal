@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>tmpMyRequests</id>
+        <sp_widget display_value="RSP Status Now Widget">3e3fce32db2793405524fbec0f96199b</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-07-30 21:37:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>74009a72db2793405524fbec0f9619b5</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>tmpMyRequests</sys_name>
+        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_ng_template_74009a72db2793405524fbec0f9619b5</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-07-30 21:44:58</sys_updated_on>
+        <template><![CDATA[<div class="media">
+  	<div class="media-body" style="background-color:#f3f3f3;padding:15px">
+      <h5 class="media-heading">View All Requests</h5>
+     
+     <h3> <a ng-href="/rsp?id=my_requests">
+       <span class="label label-default" style="background-color:#759B6B;">My Requests</span></a></h3>
+      
+    </div>
+    <div class="media-right media-middle" style="background-color:#759B6B;padding:20px">
+      <img src="icon-request-thin.png"  class="media-object"    />
+      
+   </div> 
+  
+<div>]]></template>
+    </sp_ng_template>
+</record_update>

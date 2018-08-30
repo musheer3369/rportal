@@ -54,7 +54,7 @@
 	data.window_size = $sp.getValue('maximum_entries') || 10;
 	data.window_start  = (data.page_index * data.window_size);
 	data.window_end = (((data.page_index + 1) * data.window_size));
-	data.filter = $sp.getValue("filter");
+	data.filter = $sp.getValue("filter");	
 
 	var gr = new GlideRecordSecure(data.table);
 	if (!gr.isValid()) {
@@ -87,15 +87,15 @@
         <sys_created_on>2018-03-14 04:21:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f287ffcadb3013006c8e5ec0cf961978</sys_id>
-        <sys_mod_count>20</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>RSP Data Table from Instance</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_f287ffcadb3013006c8e5ec0cf961978</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-16 11:58:48</sys_updated_on>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-08-28 06:35:59</sys_updated_on>
         <template><![CDATA[<div> 
   <div class="alert alert-danger" ng-if="data.invalid_table">
     ${Table not defined} '{{data.table_label}}'
