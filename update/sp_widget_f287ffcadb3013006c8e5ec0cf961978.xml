@@ -75,7 +75,7 @@
 		title: options.title,		
 		short_description:options.short_description,
 		show_breadcrumbs: true,
-		enable_filter:true
+		enable_filter:false
 	};
 	
 	//take the data table from global because some API calls not supported such as glidedatadescriptior etc.
@@ -87,7 +87,7 @@
         <sys_created_on>2018-03-14 04:21:28</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>f287ffcadb3013006c8e5ec0cf961978</sys_id>
-        <sys_mod_count>22</sys_mod_count>
+        <sys_mod_count>23</sys_mod_count>
         <sys_name>RSP Data Table from Instance</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -95,7 +95,7 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_f287ffcadb3013006c8e5ec0cf961978</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-08-28 06:35:59</sys_updated_on>
+        <sys_updated_on>2018-10-07 01:48:13</sys_updated_on>
         <template><![CDATA[<div> 
   <div class="alert alert-danger" ng-if="data.invalid_table">
     ${Table not defined} '{{data.table_label}}'
