@@ -115,7 +115,9 @@
 
 	// spModel populates mandatory - hasMandatory is called by the submit button
 	$scope.hasMandatory = function(mandatory) {
-		return mandatory && mandatory.length > 0;
+		// dont want to see the required fields box on the form
+		return false;
+		//return mandatory && mandatory.length > 0;
 	};
 
 	// switch catalog items
@@ -284,7 +286,7 @@ sp-variable-layout&gt;fieldset .row{&#13;
         <sys_created_on>2018-07-30 19:41:16</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3d757972dba393405524fbec0f961933</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>RSP Request Widget</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -292,7 +294,7 @@ sp-variable-layout&gt;fieldset .row{&#13;
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_3d757972dba393405524fbec0f961933</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-07-30 21:10:51</sys_updated_on>
+        <sys_updated_on>2018-10-16 13:11:14</sys_updated_on>
         <template><![CDATA[<div >
    <widget id="breadcrumbs"></widget>
   <div><h1>{{::data.sc_cat_item.name}}</h1></div>

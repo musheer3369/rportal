@@ -34,6 +34,14 @@
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
      data.page_id=$sp.getParameter("id");
+	
+	 data.isPoc = false;
+	
+	if(gs.hasRole("poc") || gs.hasRole("itil"))
+		{
+			data.isPoc= true;
+		}
+	
 })();]]></script>
         <servicenow>false</servicenow>
         <sys_class_name>sp_widget</sys_class_name>
@@ -41,7 +49,7 @@
         <sys_created_on>2018-03-14 04:14:48</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>d506bb8adb3013006c8e5ec0cf961934</sys_id>
-        <sys_mod_count>16</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name>RSP Left Navigation</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -49,7 +57,7 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_d506bb8adb3013006c8e5ec0cf961934</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-08-28 11:12:02</sys_updated_on>
+        <sys_updated_on>2018-10-16 13:17:46</sys_updated_on>
         <template><![CDATA[<div class="collapse navbar-collapse" id="collapseLeft">
    <ul class="nav nav-pills nav-stacked">
        <li>
@@ -60,13 +68,13 @@
        <li>
           <a href="/rsp?id=my_requests">  <i class="fa fa-star"></i>  My Requests</a>
      </li>
-       <li>
+     <li ng-if="c.data.isPoc">
          <a href="/rsp?id=rsp_invoices"> <i class="fa fa-list"></i> My Invoices</a>
      </li>
-     <li>
+     <li ng-if="c.data.isPoc">
        <a href="/rsp?id=rsp_reports_dashboard"> <i class="fa fa-area-chart"></i> My Reports</a>
      </li>
-     <li>
+     <li ng-if="c.data.isPoc">
        	<a href="/rsp?id=rsp_surveys"> <i class="fa fa-clipboard"></i> My Surveys</a>
      </li>    
 	</ul>
