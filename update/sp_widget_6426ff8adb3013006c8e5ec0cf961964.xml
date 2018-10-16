@@ -28,6 +28,16 @@
         <script><![CDATA[(function() {
   /* populate the 'data' object */
   /* e.g., data.table = $sp.getValue('table'); */
+	
+	console.log("uname:"+ gs.getUserName());
+	console.log(gs.hasRole("itil"));
+	
+	data.isPoc = false;
+	
+	if(gs.hasRole("poc") || gs.hasRole("itil"))
+		{
+			data.isPoc = true;
+		}
 
 })();]]></script>
         <servicenow>false</servicenow>
@@ -36,15 +46,15 @@
         <sys_created_on>2018-03-14 04:15:19</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>6426ff8adb3013006c8e5ec0cf961964</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>RSP Landing Widget</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_6426ff8adb3013006c8e5ec0cf961964</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-17 02:37:28</sys_updated_on>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-10-16 07:32:00</sys_updated_on>
         <template><![CDATA[<div> 
     <h3>IT Services Support Portal </h3>  
 </div> 
@@ -56,8 +66,8 @@
   <div class="col-xs-12 col-md-6 col-lg-6" ng-include="'tmpRequestNow'">  
   </div>  
 </div>  
-<div class="row">
-  <div class="col-xs-12 col-md-6 col-lg-6" ng-include="'tmpDataNow'">
+<div class="row" ng-if="c.data.isPoc">
+  <div class="col-xs-12 col-md-6 col-lg-6" ng-include="'tmpDataNow'" >
   
   </div>
   <div class="col-xs-12 col-md-6 col-lg-6" ng-include="'tmpStatusNow'">  
