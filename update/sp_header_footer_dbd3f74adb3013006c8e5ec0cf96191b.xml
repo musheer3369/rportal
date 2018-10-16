@@ -7,7 +7,10 @@
   var c = this;
 }]]></client_script>
         <controller_as>c</controller_as>
-        <css/>
+        <css>.row-buffer&#13;
+{&#13;
+  margin:20px 20px 20px 0px;&#13;
+}</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
         <description/>
@@ -32,7 +35,7 @@
         <sys_created_on>2018-03-14 04:05:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>dbd3f74adb3013006c8e5ec0cf96191b</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>14</sys_mod_count>
         <sys_name>RSP Footer</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -40,11 +43,11 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_header_footer_dbd3f74adb3013006c8e5ec0cf96191b</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-07-30 16:17:32</sys_updated_on>
-        <template><![CDATA[<div class="container-fluid border">
-  <div class="row footer-area">
+        <sys_updated_on>2018-10-16 14:07:30</sys_updated_on>
+        <template><![CDATA[<div class="container-fluid ">
+  <div class="row row-buffer ">
 
-    <div class="col-md-12">
+    <div class="col-md-12 col-md-offset-2">
       <div class="footer-left">      
         <a href="rsp?id=rsp_tc">Terms of Use</a>
       </div>
