@@ -11,7 +11,7 @@
         <delivery_plan display_value="">523da512c611228900811a37c97c2014</delivery_plan>
         <delivery_plan_script/>
         <delivery_time>1970-01-03 00:00:00</delivery_time>
-        <description><![CDATA[<p style="color: #343d47; margin: 0px 0px 9px;">Thank you for contacting IT Services Support.</p>
+        <description><![CDATA[<p style="color: #343d47; margin: 0px 0px 9px;">Thank you for contacting Support.</p>
 <p style="color: #343d47; margin: 0px 0px 9px;"><strong>Create a new Incident</strong> by submitting a description of your service issue using the fields below.</p>
 <p style="color: #343d47; margin: 0px 0px 9px;">Upon receipt, IT Services Support will categorize and prioritize your incident at which time you will receive an automated email with the details of that update.</p>]]></description>
         <entitlement_script/>
@@ -56,7 +56,7 @@
         <sys_created_on>2018-03-22 05:42:17</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c6961174db0113006c8e5ec0cf9619c5</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>Help Now</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -64,7 +64,7 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sc_cat_item_producer_c6961174db0113006c8e5ec0cf9619c5</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-07-26 13:44:00</sys_updated_on>
+        <sys_updated_on>2018-10-17 01:13:08</sys_updated_on>
         <table_name>incident</table_name>
         <template/>
         <type>item</type>

@@ -8,7 +8,7 @@
         <sys_created_on>2018-03-14 06:34:18</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>3ae55c5adb7013006c8e5ec0cf96198d</sys_id>
-        <sys_mod_count>10</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>tmpRequestNow</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -16,10 +16,10 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_ng_template_3ae55c5adb7013006c8e5ec0cf96198d</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-07-27 22:17:27</sys_updated_on>
+        <sys_updated_on>2018-10-17 01:05:07</sys_updated_on>
         <template><![CDATA[<div class="media">
   	<div class="media-body" style="background-color:#f3f3f3;padding:15px">
-      <h5 class="media-heading">Submit a Request</h5>
+      <h5 class="media-heading">Submit a New Request</h5>
      
      <h3> <a ng-href="/rsp?id=rsp_sc_home">
        <span class="label label-default" style="background-color:#759B6B;">REQUEST NOW</span></a></h3>
