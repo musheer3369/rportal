@@ -11,10 +11,10 @@
         <sys_id>ae24f74adb3013006c8e5ec0cf961921</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>bootstrap-ricoh-custom.Ricoh Theme</sys_name>
-        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>m2m_sp_theme_css_include_ae24f74adb3013006c8e5ec0cf961921</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2018-03-14 04:06:42</sys_updated_on>

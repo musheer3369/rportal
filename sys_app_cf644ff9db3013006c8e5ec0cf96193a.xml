@@ -8,7 +8,7 @@
         <license_model>none</license_model>
         <logo/>
         <menu/>
-        <name>Ricoh Portal</name>
+        <name>Ricoh Portal </name>
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
@@ -23,9 +23,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-13 05:59:38</sys_created_on>
         <sys_id>cf644ff9db3013006c8e5ec0cf96193a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-29 04:48:11</sys_updated_on>
+        <sys_updated_on>2018-10-18 08:30:15</sys_updated_on>
         <template/>
         <trackable>true</trackable>
         <user_role/>

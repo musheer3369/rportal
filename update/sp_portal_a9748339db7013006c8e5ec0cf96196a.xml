@@ -31,10 +31,10 @@ width:0px !important;&#13;
         <sys_id>a9748339db7013006c8e5ec0cf96196a</sys_id>
         <sys_mod_count>10</sys_mod_count>
         <sys_name>Ricoh Service Portal</sys_name>
-        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_portal_a9748339db7013006c8e5ec0cf96196a</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
         <sys_updated_on>2018-10-17 04:23:02</sys_updated_on>

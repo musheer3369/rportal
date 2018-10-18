@@ -17,10 +17,10 @@
         <sys_id>ae56d18cdb1ca3046d7070e21f96190e</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name>rsp_surveys</sys_name>
-        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_page_ae56d18cdb1ca3046d7070e21f96190e</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
         <sys_updated_on>2018-08-28 11:09:21</sys_updated_on>

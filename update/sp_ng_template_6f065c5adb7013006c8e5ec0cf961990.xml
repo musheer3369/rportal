@@ -10,10 +10,10 @@
         <sys_id>6f065c5adb7013006c8e5ec0cf961990</sys_id>
         <sys_mod_count>2</sys_mod_count>
         <sys_name>tmpWelcome</sys_name>
-        <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
-        <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_ng_template_6f065c5adb7013006c8e5ec0cf961990</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
         <sys_updated_on>2018-10-17 01:04:26</sys_updated_on>
