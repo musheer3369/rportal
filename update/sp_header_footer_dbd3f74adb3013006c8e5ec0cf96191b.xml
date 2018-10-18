@@ -2,14 +2,19 @@
 <record_update table="sp_header_footer">
     <sp_header_footer action="INSERT_OR_UPDATE">
         <category/>
-        <client_script><![CDATA[function() {
+        <client_script><![CDATA[function(spModal) {
   /* widget controller */
   var c = this;
+	c.showTermsOfUse = function(){
+		spModal.open({
+			title:"Terms of Use", widget:"rsp-terms-of-use",size:"lg"
+		});
+	};
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.row-buffer&#13;
 {&#13;
-  margin:20px 20px 20px 0px;&#13;
+  margin:40px 40px 40px 0px;&#13;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -35,7 +40,7 @@
         <sys_created_on>2018-03-14 04:05:24</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>dbd3f74adb3013006c8e5ec0cf96191b</sys_id>
-        <sys_mod_count>14</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>RSP Footer</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -43,13 +48,13 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_header_footer_dbd3f74adb3013006c8e5ec0cf96191b</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-10-16 14:07:30</sys_updated_on>
+        <sys_updated_on>2018-10-17 05:11:03</sys_updated_on>
         <template><![CDATA[<div class="container-fluid ">
   <div class="row row-buffer ">
 
     <div class="col-md-12 col-md-offset-2">
       <div class="footer-left">      
-        <a href="rsp?id=rsp_tc">Terms of Use</a>
+        <a href ng-click="c.showTermsOfUse()">Terms of Use</a>
       </div>
 
       <div class="footer-right">

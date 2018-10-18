@@ -2,22 +2,7 @@
 <record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category/>
-        <css>.add-on &gt; button.lookup {&#13;
-&#13;
-&#13;
-   display:none;&#13;
-&#13;
-&#13;
-}&#13;
-&#13;
-&#13;
-.field-has-reference .reference {&#13;
-&#13;
-&#13;
-       display: block;&#13;
-&#13;
-&#13;
-}</css>
+        <css/>
         <draft>false</draft>
         <dynamic_title_structure/>
         <id>incident_form</id>
@@ -30,7 +15,7 @@
         <sys_created_on>2018-03-22 06:08:49</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>c9dc1d38db0113006c8e5ec0cf961917</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>incident_form</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -38,7 +23,7 @@
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_page_c9dc1d38db0113006c8e5ec0cf961917</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-10-16 13:13:33</sys_updated_on>
+        <sys_updated_on>2018-10-17 04:24:33</sys_updated_on>
         <title>Incident Form</title>
     </sp_page>
 </record_update>

@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
-        <css_variables/>
+        <css_variables>.add-on &gt; button.lookup {&#13;
+   display:none;&#13;
+}&#13;
+.field-has-reference .add-on{&#13;
+width:0px !important;&#13;
+}&#13;
+.field-has-reference .reference {   &#13;
+}</css_variables>
         <default>true</default>
         <homepage display_value="home">2a8fbf02db7013006c8e5ec0cf96190b</homepage>
         <icon/>
@@ -22,15 +29,15 @@
         <sys_created_on>2018-03-13 06:00:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a9748339db7013006c8e5ec0cf96196a</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>10</sys_mod_count>
         <sys_name>Ricoh Service Portal</sys_name>
         <sys_package display_value="Ricoh Portal" source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_portal_a9748339db7013006c8e5ec0cf96196a</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-16 05:31:08</sys_updated_on>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-10-17 04:23:02</sys_updated_on>
         <theme display_value="Ricoh Theme">3a33774adb3013006c8e5ec0cf9619fa</theme>
         <title>Ricoh Service Portal</title>
         <url_suffix>rsp</url_suffix>
