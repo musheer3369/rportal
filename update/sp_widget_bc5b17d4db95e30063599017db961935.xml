@@ -585,7 +585,7 @@ tbody tr:last-child {
 	optCopy(['relationship_id', 'apply_to', 'apply_to_sys_id']);
 	
 	//data.title = data.short_description || options.title || input.title;
-	data.title="Invoices";
+	data.short_description="Invoices";
 	
 	if (!data.table) {
 		data.invalid_table = true;
@@ -615,7 +615,7 @@ tbody tr:last-child {
 	data.show_new = data.show_new || options.show_new;
 
 	data.table="u_mst_invoice";
-	data.fields="u_name,u_customer,u_billtolocation,u_totalamount,u_duedate";
+	data.fields="u_name,u_customer,u_billtolocation,u_totalamount";
 		gr = new GlideRecordSecure("u_mst_invoice");
 	
 	
@@ -644,7 +644,6 @@ tbody tr:last-child {
 		else
 			gr.orderByDesc(data.o);
 	}
-
 	data.window_start = data.page_index * data.window_size;
 	data.window_end = (data.page_index + 1) * data.window_size;
 	gr.chooseWindow(data.window_start, data.window_end);		
@@ -695,7 +694,7 @@ tbody tr:last-child {
         <sys_created_on>2018-10-18 08:31:42</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>bc5b17d4db95e30063599017db961935</sys_id>
-        <sys_mod_count>34</sys_mod_count>
+        <sys_mod_count>37</sys_mod_count>
         <sys_name>RSP Invoices</sys_name>
         <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
@@ -703,7 +702,7 @@ tbody tr:last-child {
         <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_bc5b17d4db95e30063599017db961935</sys_update_name>
         <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-10-18 09:09:25</sys_updated_on>
+        <sys_updated_on>2018-10-18 09:34:42</sys_updated_on>
         <template><![CDATA[<div  class="row ricoh-panel" ng-init="c.init()">
       <!-- <widget id="breadcrumbs"></widget> -->
   	    <div class="pull-right-sm col-xs-9 col-sm-8 col-md-5 col-lg-4">

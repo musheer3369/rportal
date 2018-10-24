@@ -25,4 +25,43 @@
         <thumbnail/>
         <width>48</width>
     </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#0</average_image_color>
+        <chunk_size_bytes>734003</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <image_height>48</image_height>
+        <image_width>48</image_width>
+        <size_bytes>956</size_bytes>
+        <size_compressed>979</size_compressed>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-10-18 09:38:07</sys_created_on>
+        <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
+        <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
+        <sys_id>f69aeb50dbd9e30063599017db9619dd</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2018-10-18 09:38:07</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>094bd85edb7013006c8e5ec0cf96191f</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAAAA==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="f69aeb50dbd9e30063599017db9619dd">f69aeb50dbd9e30063599017db9619dd</sys_attachment>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-10-18 09:38:07</sys_created_on>
+        <sys_id>3a9aeb50dbd9e30063599017db9619dd</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>AbwDQ/yJUE5HDQoaCgAAAA1JSERSAAAAMAAAADAIBgAAAFcC+YcAAAAEZ0FNQQAAsY8L/GEFAAADc0lEQVRoBe2au2sUURTGs2BnI2ghahEre6PG2GzeamMSnygign+Cj0oQBWv/AXvtUthYpBIsFISIYCUYH6XR+E58jb9v9x65OzuTzOzOzezKHvhyZ849957vO3P2MbPp6+sgi6JoAzgHZsEbsAIWwSNwA+zoILqNVCA3BF4A2W/wFoj4U3fOEC2Da6DSuLrkMwidAqr2T3Ab9PuUON8EzoN3QHYXdIYIiIj8LyD7BA745P1j5raCB0B21Z8r5RgSRv49x1eArsJaIrYRo/jvYHspxJWU5CeBVf6g8x3BZyKG0sgRcwHIrqfFBPWT2MiLrEwv1C2eiB+c60okilAs+AMeByWatDlJjbzaYADcArIkER/xp4l4ztxiUo5gPhI2kLdE+H0Rm+XHNwV0JSRiv8XaiO8ZWLbz4CPJRF5vk7XKxxPizyWC+CWwEN8nyDmJTgCR/wAG0pIwl0kEcbuB7E7aXoX5SZKJvCUkPknENH5rp0GO7wHZjK0LMpLAJ78naxLWmYh5ju01YSI+45M9AeE+jdm8JfImkvVJIm7il6n/d1ls4SObHwfW85krHyfCHr6IM5zr0/crGI7HFnbO5j75ve1uzH4mgsMa+ZF290xdXzR5JWLPSaCv16p8UPLHSKC2UX+2XXlHfoK9rG165BNbhwr9N5Xfl6gwp5OC+G0zmnN59nASHQXW80WRH2fPbw5dR16V71ry61b5GaqkL1V6qxzM3nDpkezjkx9Lj2xzhkRGXjcYPfIUYQxYzwetvH2NLbLypZBvui9tpSvLqnxR5Ee9thlvpQCZ1pDEb5uuIz+FALv/LJq8vlkGrXxo8hOZWqCVICrjk098GpZ3X/YcAboRUeWDktdDVbVN6vPIHvm8FcgaT9X1qE92Ouua1eLYx2+bydViC5mrUa//ec2ws51NWT8MrOfDkxfZOvfInna9alVEKeQ9AXMQuOjE5BYRI1/7taWdK5lrrSM958TkFlEqef8KmGoIXXKiFhj7zZ80Ml8F1vPrW3kjBAFZ7Qp4vjVFsKYKvgB9SJVDXoRJLmsQ4PypIoivApHXL+eHTHgpIwRkTQKciMv16ehfO3FeBZ1B3pEUx0QBMREviTsLOoc8BCsQihiXwDzQsZl/rJv4jW5ihXG6Uqnct8BSR/g/BPrROA5cTaZ/tjhcKuFY8r9UN5ItMp6SowAAAABJRU5ErkJggpsuh5u8AwAA</data>
+        <length>1292</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="f69aeb50dbd9e30063599017db9619dd">f69aeb50dbd9e30063599017db9619dd</sys_attachment>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2018-10-18 09:38:07</sys_created_on>
+        <sys_id>ba9aeb50dbd9e30063599017db9619dd</sys_id>
+    </sys_attachment_doc>
 </record_update>
