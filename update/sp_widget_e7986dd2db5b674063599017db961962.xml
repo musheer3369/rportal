@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>rsp-data-now-widget</id>
+        <internal>false</internal>
+        <link/>
+        <name>RSP Data Now Widget</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
+        <sys_created_on>2019-01-31 15:24:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>e7986dd2db5b674063599017db961962</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>RSP Data Now Widget</sys_name>
+        <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
+        <sys_update_name>sp_widget_e7986dd2db5b674063599017db961962</sys_update_name>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2019-01-31 15:24:47</sys_updated_on>
+        <template><![CDATA[<div> 
+    <h3>Data Now </h3>  
+</div> 
+
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-lg-6" ng-include="'tmpMyAssets'">
+  
+  </div>
+  <div class="col-xs-12 col-md-6 col-lg-6" ng-include="'tmpMyReports'">  
+  </div>  
+</div> ]]></template>
+    </sp_widget>
+</record_update>
