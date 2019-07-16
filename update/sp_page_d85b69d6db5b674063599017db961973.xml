@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category>custom</category>
         <css/>
@@ -26,4 +25,5 @@
         <sys_updated_on>2019-01-31 15:35:36</sys_updated_on>
         <title>RSP Assets</title>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=d85b69d6db5b674063599017db961973"/>
 </record_update>

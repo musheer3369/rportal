@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_widget_dependency">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_widget_dependency">
     <m2m_sp_widget_dependency action="INSERT_OR_UPDATE">
         <sp_dependency display_value="selectize">4a3c6ab7d730120023c84f80de6103de</sp_dependency>
         <sp_widget display_value="RSP Invoices">bc5b17d4db95e30063599017db961935</sp_widget>

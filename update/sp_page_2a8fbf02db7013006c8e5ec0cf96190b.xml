@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category/>
         <css/>
@@ -26,4 +25,5 @@
         <sys_updated_on>2018-03-17 03:19:41</sys_updated_on>
         <title>Home</title>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=2a8fbf02db7013006c8e5ec0cf96190b"/>
 </record_update>

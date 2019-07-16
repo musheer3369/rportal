@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category>custom</category>
         <css/>
@@ -26,4 +25,5 @@
         <sys_updated_on>2018-07-27 12:53:13</sys_updated_on>
         <title>RSP SC Category</title>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=523b747ddb675f005524fbec0f961964"/>
 </record_update>

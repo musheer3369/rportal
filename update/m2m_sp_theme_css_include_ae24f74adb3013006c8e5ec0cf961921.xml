@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_theme_css_include">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_css_include">
     <m2m_sp_theme_css_include action="INSERT_OR_UPDATE">
         <order/>
         <sp_css_include display_value="bootstrap-custom">0b033f0adb3013006c8e5ec0cf961960</sp_css_include>

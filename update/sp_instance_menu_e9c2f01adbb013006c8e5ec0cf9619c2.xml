@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_instance_menu">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_menu">
     <sp_instance_menu action="INSERT_OR_UPDATE">
         <active>true</active>
         <class_name/>
@@ -31,4 +30,5 @@
         <url/>
         <widget_parameters/>
     </sp_instance_menu>
+    <sys_translated_text action="delete_multiple" query="documentkey=e9c2f01adbb013006c8e5ec0cf9619c2"/>
 </record_update>

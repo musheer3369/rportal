@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_ng_template">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
     <sp_ng_template action="INSERT_OR_UPDATE">
         <id>rspKeywordSearch</id>
         <sp_widget display_value="RSP  Data Table">268a8e70db6113006c8e5ec0cf9619ff</sp_widget>

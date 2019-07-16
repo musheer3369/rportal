@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_page">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
     <sp_page action="INSERT_OR_UPDATE">
         <category>custom</category>
         <css/>
@@ -26,4 +25,5 @@
         <sys_updated_on>2018-07-30 19:42:36</sys_updated_on>
         <title>RSP Request Form</title>
     </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=13a57972dba393405524fbec0f961981"/>
 </record_update>

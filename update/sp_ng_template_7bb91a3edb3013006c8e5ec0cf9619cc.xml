@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_ng_template">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
     <sp_ng_template action="INSERT_OR_UPDATE">
         <id>ricoh-nav-template</id>
         <sp_widget display_value="RSP Header">c4f17f02db3013006c8e5ec0cf96199a</sp_widget>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="m2m_sp_ng_pro_sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
     <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
         <sp_angular_provider display_value="rpAccountService">1ad17799db6d13006c8e5ec0cf9619f6</sp_angular_provider>
         <sp_widget display_value="RSP Invoices">bc5b17d4db95e30063599017db961935</sp_widget>

@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_ng_template">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
     <sp_ng_template action="INSERT_OR_UPDATE">
         <id>tmpMyReports</id>
         <sp_widget display_value="RSP Data Now Widget">e7986dd2db5b674063599017db961962</sp_widget>

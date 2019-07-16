@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_portal">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_portal">
     <sp_portal action="INSERT_OR_UPDATE">
         <css_variables>.add-on &gt; button.lookup {&#13;
    display:none;&#13;
@@ -29,19 +28,20 @@ width:0px !important;&#13;
         <sys_created_on>2018-03-13 06:00:30</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>a9748339db7013006c8e5ec0cf96196a</sys_id>
-        <sys_mod_count>10</sys_mod_count>
-        <sys_name>Ricoh Service Portal</sys_name>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name>Ricoh Service Portal.</sys_name>
         <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_portal_a9748339db7013006c8e5ec0cf96196a</sys_update_name>
-        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-10-17 04:23:02</sys_updated_on>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-07-10 05:30:35</sys_updated_on>
         <theme display_value="Ricoh Theme">3a33774adb3013006c8e5ec0cf9619fa</theme>
-        <title>Ricoh Service Portal</title>
+        <title>Ricoh Service Portal.</title>
         <url_suffix>rsp</url_suffix>
     </sp_portal>
+    <sys_translated_text action="delete_multiple" query="documentkey=a9748339db7013006c8e5ec0cf96196a"/>
     <sys_attachment action="INSERT_OR_UPDATE">
         <average_image_color>#ffffff</average_image_color>
         <chunk_size_bytes/>
@@ -52,14 +52,15 @@ width:0px !important;&#13;
         <image_width>160</image_width>
         <size_bytes>3541</size_bytes>
         <size_compressed>3493</size_compressed>
+        <state>available</state>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2018-03-13 06:03:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>1865c739db7013006c8e5ec0cf96196f</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-03-13 06:03:49</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-08 12:33:24</sys_updated_on>
         <table_name>ZZ_YYsp_portal</table_name>
         <table_sys_id>a9748339db7013006c8e5ec0cf96196a</table_sys_id>
     </sys_attachment>

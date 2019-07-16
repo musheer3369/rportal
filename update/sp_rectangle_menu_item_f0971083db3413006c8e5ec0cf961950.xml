@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_rectangle_menu_item">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
     <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
         <active>true</active>
         <color>default</color>
@@ -42,4 +41,5 @@
         <url>rsp?id=my_incidents</url>
         <url_target/>
     </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=f0971083db3413006c8e5ec0cf961950"/>
 </record_update>

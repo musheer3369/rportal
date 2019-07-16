@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<record_update table="sp_widget">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category/>
         <client_script><![CDATA[function ($rootScope,$scope, $location, spUtil, amb, $http,$timeout,$q, rpAccountService) {
@@ -788,7 +787,7 @@ tbody tr:last-child {&#13;
 		gr.addEncodedQuery("sys_domain!=global^ORsys_domain=NULL");
 		gr.addEncodedQuery("sys_id!=" + gs.getUser().getCompanyID() );
 		gr.query();		
-		
+		console.log("Visibile Accounts:"  + gr.getRowCount());
 		return gr.getRowCount();
 	}
 
@@ -799,15 +798,15 @@ tbody tr:last-child {&#13;
         <sys_created_on>2018-04-16 05:59:55</sys_created_on>
         <sys_customer_update>false</sys_customer_update>
         <sys_id>268a8e70db6113006c8e5ec0cf9619ff</sys_id>
-        <sys_mod_count>71</sys_mod_count>
+        <sys_mod_count>72</sys_mod_count>
         <sys_name>RSP  Data Table</sys_name>
         <sys_package display_value="Ricoh Portal " source="x_90620_rp">cf644ff9db3013006c8e5ec0cf96193a</sys_package>
         <sys_policy/>
         <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
         <sys_scope display_value="Ricoh Portal ">cf644ff9db3013006c8e5ec0cf96193a</sys_scope>
         <sys_update_name>sp_widget_268a8e70db6113006c8e5ec0cf9619ff</sys_update_name>
-        <sys_updated_by>Zalifa.Zainieva@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-10-19 07:29:46</sys_updated_on>
+        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
+        <sys_updated_on>2019-07-11 07:25:31</sys_updated_on>
         <template><![CDATA[<div  class="row ricoh-panel" ng-init="c.init()">
       <widget id="breadcrumbs"></widget>
   		<div class="col-xs-9 col-sm-8 col-md-5 col-lg-4" ng-include="'rspKeywordSearch'">         
