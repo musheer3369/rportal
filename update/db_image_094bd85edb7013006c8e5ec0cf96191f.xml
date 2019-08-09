@@ -34,15 +34,15 @@
         <image_width>48</image_width>
         <size_bytes>956</size_bytes>
         <size_compressed>979</size_compressed>
-        <state/>
+        <state>available</state>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
         <sys_created_on>2018-10-18 09:38:07</sys_created_on>
         <sys_domain>8eba0beedb423200ddad70e21f9619df</sys_domain>
         <sys_domain_path>!!!/!!!/!!!/!!!/!!!/</sys_domain_path>
         <sys_id>f69aeb50dbd9e30063599017db9619dd</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_updated_by>Mohammad.Ahmed@mindshift.com</sys_updated_by>
-        <sys_updated_on>2018-10-18 09:38:07</sys_updated_on>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>guest</sys_updated_by>
+        <sys_updated_on>2019-07-30 06:16:39</sys_updated_on>
         <table_name>ZZ_YYdb_image</table_name>
         <table_sys_id>094bd85edb7013006c8e5ec0cf96191f</table_sys_id>
     </sys_attachment>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_theme_js_include">
     <m2m_sp_theme_js_include action="INSERT_OR_UPDATE">
         <order>100</order>
-        <sp_js_include display_value="https://code.jquery.com/jquery-1.12.4.js">fa500b8ddb2e37006d7070e21f961936</sp_js_include>
+        <sp_js_include display_value="">fa500b8ddb2e37006d7070e21f961936</sp_js_include>
         <sp_theme display_value="Ricoh Theme">3a33774adb3013006c8e5ec0cf9619fa</sp_theme>
         <sys_class_name>m2m_sp_theme_js_include</sys_class_name>
         <sys_created_by>Mohammad.Ahmed@mindshift.com</sys_created_by>
