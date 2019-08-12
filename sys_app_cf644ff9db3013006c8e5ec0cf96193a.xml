@@ -13,10 +13,10 @@
         <private>false</private>
         <restrict_table_access>false</restrict_table_access>
         <runtime_access_tracking>permissive</runtime_access_tracking>
-        <scope>x_90620_rp</scope>
+        <scope>x_mst_rp</scope>
         <scoped_administration>false</scoped_administration>
         <short_description/>
-        <source>x_90620_rp</source>
+        <source>x_mst_rp</source>
         <store_correlation_id/>
         <store_url/>
         <sys_class_name>sys_app</sys_class_name>
